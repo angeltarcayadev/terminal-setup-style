@@ -1,4 +1,4 @@
-﻿<h1 align="center">
+<h1 align="center">
   Terminal Setup Style
 </h1>
 
@@ -184,12 +184,14 @@ Aquí tienes un vistazo de los **27 increíbles temas** que puedes elegir.
   </tr>
 </table>
 
+<!-- 
 ## 🤝 Comunidad
 
 Mantente conectado y únete a la conversación con la comunidad:
 
 * [Mastodon](https://mastodon.social/)
 * [Discord](https://discord.com/)
+-->
 
 ---
 <p align="center">
