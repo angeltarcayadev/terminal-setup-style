@@ -1,19 +1,61 @@
-# Terminal Setup Style by Angel-T Dev 🚀
+<h1 align="center">
+  Terminal Setup Style
+</h1>
 
-¡Transforma la aburrida terminal por defecto de Visual Studio Code en una herramienta profesional, colorida y con iconos increíbles con un solo comando!
+<p align="center">
+  <i align="center">Prompt theme engine for your VS Code terminal ??</i>
+</p>
 
-<div align="center">
-  <img src="https://github.com/user-attachments/assets/c4c0e6f8-df9d-4f5a-be8e-25699a2ab0fd" alt="Vista previa de la terminal de Angel-T Dev" width="800">
-</div>
+<p align="center">
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style/blob/main/LICENSE"><img src="https://img.shields.io/github/license/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="License"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style/actions"><img src="https://img.shields.io/github/actions/workflow/status/angeltarcayadev/terminal-setup-style/build.yml?style=for-the-badge" alt="Build Status"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style/releases"><img src="https://img.shields.io/github/v/release/angeltarcayadev/terminal-setup-style?style=for-the-badge" alt="Release"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style"><img src="https://img.shields.io/badge/docs-read-green?style=for-the-badge" alt="Docs"></a>
+  <a href="https://marketplace.visualstudio.com/items?itemName=Angel-TDev.terminal-setup-style"><img src="https://img.shields.io/visual-studio-marketplace/d/Angel-TDev.terminal-setup-style?style=for-the-badge" alt="Downloads"></a>
+</p>
+
+<p align="center">
+  <a href="https://www.gitkraken.com/"><img src="https://img.shields.io/badge/Made_with_love_using-GitKraken-179287?style=for-the-badge&logo=gitkraken&logoColor=white" alt="GitKraken"></a>
+</p>
+
+## ?? Sponsors
+
+<p>
+  <a href="https://coderabbit.ai/"><img src="https://img.shields.io/badge/CodeRabbit-AI-FF6B6B?style=for-the-badge" alt="CodeRabbit"></a>
+</p>
+
+[Want to become a sponsor?](https://github.com/sponsors/angeltarcayadev)
+
+## ?? Join the community
+
+<p>
+  <a href="https://discord.gg/your-discord-link"><img src="https://img.shields.io/discord/1234567890?color=5865F2&label=Discord&logo=discord&logoColor=white&style=for-the-badge" alt="Discord"></a>
+  <a href="https://mastodon.social/@your-handle"><img src="https://img.shields.io/mastodon/follow/12345?domain=https%3A%2F%2Fmastodon.social&style=for-the-badge&logo=mastodon" alt="Mastodon"></a>
+</p>
 
 ---
 
-## 💎 Diseños Premium Dinámicos en la Nube
-Para garantizar la máxima calidad en los diseños, los temas incluyen **múltiples estructuras arquitectónicas** (bordes redondeados, estilo powerline, diamantes, minimalista y rectos). Además, el motor de la extensión se conecta a la **nube** para descargar dinámicamente y en tiempo real las versiones más modernas y perfectas de cada estructura arquitectónica. Esto asegura que siempre tengas un estilo impecable, de alto rendimiento y actualizado.
+What started as a simple script to customize PowerShell inside VS Code resulted in a highly customizable and extensible prompt theme engine. With **Terminal Setup Style**, you can effortlessly inject beautiful architectural designs, Nerd Fonts, and ASCII art directly into your VS Code integrated terminal.
+
+### ?? Support ??
+
+- [**Swag**](#) - Show your love with a t-shirt!
+- [**GitHub**](https://github.com/sponsors/angeltarcayadev) - One time support, or a recurring donation?
+- [**Ko-Fi**](#) - No coffee, no code.
 
 ---
 
-<h3>🎨 Galería de Temas</h3>
+## ? Features
+
+- **Shell and platform agnostic**: Designed to work flawlessly in your VS Code terminal (PowerShell focus).
+- **Easily configurable**: No more complex JSON editing, pick your style directly from VS Code settings.
+- **The most configurable prompt utility**: Over 19+ premium themes ready to use, plus support for custom themes via the \	hemes/\ folder.
+- **Fast**: Installs and configures everything locally with zero latency.
+- **Dynamic ASCII Art**: Generate beautiful, colorful ASCII banners dynamically for your profile.
+
+---
+
+## ?? Galer�a de Temas
 
 <table align="center" width="100%">
   <tr>
@@ -107,106 +149,76 @@ Para garantizar la máxima calidad en los diseños, los temas incluyen **múltip
     </td>
   </tr>
   <tr>
-    <td align="center" colspan="2" width="50%">
+    <td align="center">
       <b>paradox</b><br>
-      <img src="assets/img/paradox.png" alt="paradox" width="50%">
+      <img src="assets/img/paradox.png" alt="paradox" width="100%">
+    </td>
+    <td align="center">
+      <b>custom_pastel</b><br>
+      <img src="assets/img/custom_pastel.png" alt="custom_pastel" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>custom_palette</b><br>
+      <img src="assets/img/custom_palette.png" alt="custom_palette" width="100%">
+    </td>
+    <td align="center">
+      <b>custom_minimal</b><br>
+      <img src="assets/img/custom_minimal.png" alt="custom_minimal" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>custom_powerline</b><br>
+      <img src="assets/img/custom_powerline.png" alt="custom_powerline" width="100%">
+    </td>
+    <td align="center">
+      <b>custom_split</b><br>
+      <img src="assets/img/custom_split.png" alt="custom_split" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>custom_neon</b><br>
+      <img src="assets/img/custom_neon.png" alt="custom_neon" width="100%">
+    </td>
+    <td align="center">
+      <b>custom_aqua</b><br>
+      <img src="assets/img/custom_aqua.png" alt="custom_aqua" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2" width="50%">
+      <b>custom_dev</b><br>
+      <img src="assets/img/custom_dev.png" alt="custom_dev" width="50%">
     </td>
   </tr>
 </table>
 
 ---
 
-## ✨ Características
+## ?? Instalaci�n y Uso
 
-* **Instalación de 1 Clic:** Olvídate de configuraciones largas en PowerShell. La extensión hace todo el trabajo pesado.
-* **Motor Oh My Posh:** Inyecta un diseño visual moderno y fácil de leer directamente en tu editor.
-* **Iconografía Avanzada:** Soporte total para iconos de carpetas, estado de Git y lenguajes de programación.
-* **Integración Nativa:** Modifica automáticamente el `settings.json` de VS Code para aplicar la fuente correcta sin que tengas que buscarla.
+1. Instala la extensi�n **Terminal Setup Style** desde el VS Code Marketplace.
+2. Abre la configuraci�n de VS Code presionando \Ctrl\ + \,\.
+3. Busca **\Terminal Setup Style\**.
+4. Configura tu nombre, fuente Nerd Font, y elige uno de los temas del men� desplegable.
+5. Abre la Paleta de Comandos (\Ctrl\ + \Shift\ + \P\) y ejecuta **\Angel-T Dev: Instalar Terminal Setup\**.
 
-## 📋 Requisitos Previos
+## ?? Documentation
 
-¡Buenas noticias! A partir de la versión **0.0.7**, la extensión **descarga e instala automáticamente** las fuentes necesarias (*FiraCode Nerd Font* y *CaskaydiaCove Nerd Font*) en tu perfil de usuario (sin requerir permisos de administrador). 
+For full setup instructions, custom themes mapping, and troubleshooting, visit the GitHub repository or the visual gallery above.
 
-*Nota: Solo si experimentas algún fallo en la descarga automática, puedes instalarlas manualmente desde la página de [Nerd Fonts](https://www.nerdfonts.com/).*
+## ? Reviews
 
-## 🚀 Cómo Usarla
+> "Terminal Setup Style completely changed the way I look at VS Code. A game changer."  
+> � **Repo review by Angel-T Dev Community**
 
-1. Abre Visual Studio Code.
-2. Abre la Paleta de Comandos presionando `Ctrl` + `Shift` + `P`.
-3. Escribe y selecciona el comando: **`Angel-T Dev: Instalar Terminal Setup`**.
-4. ¡Espera el mensaje de éxito, abre una nueva terminal y disfruta tu nuevo entorno!
+## ?? Thanks
 
-## ⚙️ Personalización (Configuración)
+- **Jan De Dobbeleer** providing the first influence to start oh-my-posh.
+- **Keith Dahlby** for creating posh-git and making life more enjoyable.
+- **Robby Russell** for creating oh-my-zsh, without him this would probably not be here.
+- **Starship** for doing great things.
 
-Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Code para que puedas modificar tus parámetros de forma integrada y sin complicaciones:
-
-1. Abre la configuración de VS Code presionando `Ctrl` + `,` (o ve a *Archivo > Preferencias > Configuración*).
-2. En la barra de búsqueda superior, escribe: **`Terminal Setup Style`**.
-3. Verás los campos de personalización listos para ser editados:
-   * **Nombre**: El nombre que se mostrará en tu prompt de PowerShell.
-   * **Fuente**: El nombre de tu Nerd Font instalada.
-   * **Tema**: Menú desplegable para seleccionar tu tema de Oh My Posh favorito.
-   * **Color ASCII**: Menú desplegable para elegir el color del Arte ASCII de bienvenida (usa 'auto' para usar el del tema).
-4. Modifica los valores. Se guardarán automáticamente de forma global en tu VS Code.
-5. Abre la Paleta de Comandos (`Ctrl` + `Shift` + `P`) y ejecuta **`Angel-T Dev: Instalar Terminal Setup`** para aplicar e instalar la terminal con tu nueva configuración.
-
-> 💡 **Tip:** ¿Quieres crear tus propias letras gigantes personalizadas para la terminal? Genera las tuyas usando [TAAG Generator (Font: ANSI Shadow)](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow).
-
-## 🛠️ Notas de Versión
-
-### v0.1.11
-* **Mega Expansión de Temas (19 Diseños)**: Integración de una galería visual completa con **19 temas dinámicos premium**, que abarcan diseños oficiales (`catppuccin`, `dracula`, `nord`, etc.) y configuraciones altamente personalizadas.
-* **Galería Visual Optimizada**: Nueva tabla de visualización de dos columnas con capturas reales ultra-nítidas para que elijas tu estilo favorito sin sorpresas.
-* **Rendimiento Mejorado**: Ajuste fino en la activación interna para un arranque más rápido del motor de configuración al abrir la terminal.
-
-### v0.1.3
-* **Diseños Premium Dinámicos**: Los temas ahora descargan sus estructuras arquitectónicas avanzadas desde la nube, garantizando siempre la versión más moderna.
-* **Mejora del Instalador**: El motor de PowerShell se ha integrado perfectamente para inyectar estos diseños sin romper el arte ASCII del perfil.
-
-### v0.1.2
-* **Arte ASCII Dinámico**: Integración nativa para generar texto ASCII gigante. Ahora se puede personalizar el banner del perfil al instante desde la configuración de VS Code.
-
-### v0.0.14
-* **Nuevos Temas Inspirados**: Base consolidada de temas, allanando el camino para la galería completa de la extensión.
-
-### v0.0.13
-* **Personalización Total de ASCII**: Nuevo ajuste global en VS Code para cambiar dinámicamente el color del arte ASCII de bienvenida.
-
-### v0.0.12
-* **Documentación Histórica**: Reconstrucción y sincronización completa del historial de versiones desde el inicio del proyecto.
-
-### v0.0.11
-* **Sistema de Lanzamientos con IA**: Integración de una habilidad inteligente que automatiza la creación de notas de versión y sincroniza los archivos `.md`.
-
-### v0.0.10
-* **Auto-Arranque Inteligente**: El menú interactivo de temas se ejecuta automáticamente la primera vez que instalas la extensión, guiando al usuario de inmediato.
-
-### v0.0.9
-* **Sincronización Dinámica de Configuración**: Mejoras en la gestión dinámica de configuraciones desde `extension.ts` para aplicar temas instantáneamente sin recargar.
-
-### v0.0.8 / v0.0.7
-* **Menú Interactivo (QuickPick)**: Se agregó un menú desplegable para elegir el tema directamente al ejecutar el comando.
-* **Generación Dinámica de Temas**: Ahora los archivos `.omp.json` se generan dinámicamente con los colores exactos seleccionados.
-* **Descarga Automática de Fuentes**: Instalación de Nerd Fonts de forma silenciosa y sin permisos de administrador.
-
-### v0.0.6 / v0.0.5
-* **Comando de Instalación Integrado**: Implementación de la lógica principal para la sincronización de temas y la ejecución remota de instalación desde la terminal.
-
-### v0.0.4 / v0.0.2
-* **Mejoras Visuales e Integración**: Adición del logo oficial (`icon.png`) y optimización de la estructura. 
-* Añadidas las configuraciones personalizadas al panel de VS Code (Nombre, Fuente y Tema).
-* Creación del script `build-release.ps1` para un empaquetado y versionado automatizado.
-
-### v0.0.1
-* Lanzamiento inicial del repositorio.
-* Conexión directa con el script instalador remoto de PowerShell pasando variables de entorno de manera segura.
-* Soporte MIT Open Source y licencia oficial en el repositorio.
-
----
-
-## 📄 Licencia
-
-Este proyecto está bajo la Licencia **MIT**. Consulta el código fuente y úsalo libremente para tus desarrollos.
-
----
-*Desarrollado con 💻 y ☕ por [Angel Eduardo Tarcaya](https://github.com/angeltarcayadev)*

@@ -25,14 +25,17 @@ export function activate(context: vscode.ExtensionContext) {
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
             let tema = config.get<string>('tema') || 'jandedobbeleer';
 
-            // 1.1 Mostrar un menú (QuickPick) para que el usuario elija su tema favorito
-            const temasDisponibles = [
-                'jandedobbeleer', 'cyberpunk', 'dracula', 'hacker', 
-                'tokyonight_storm', 'monokai', 'blue-owl', 'synthwave', 
-                'gruvbox', 'minimal', 'catppuccin_mocha', 'cobalt2',
-                'night-owl', 'nord', 'agnoster', 'material',
-                'spaceship', 'powerlevel10k_rainbow', 'paradox'
-            ];
+            // 1.1 Mostrar un menú (QuickPick) leyendo los archivos de la carpeta 'themes' localmente
+            let temasDisponibles: string[] = [];
+            try {
+                const themesDir = path.join(__dirname, '..', 'themes');
+                const files = fs.readdirSync(themesDir);
+                temasDisponibles = files.filter(f => f.endsWith('.omp.json')).map(f => f.replace('.omp.json', ''));
+            } catch (err) {
+                console.error("No se pudo leer la carpeta themes", err);
+                // Fallback de seguridad
+                temasDisponibles = ['jandedobbeleer', 'cyberpunk', 'dracula'];
+            }
 
             const seleccion = await vscode.window.showQuickPick(temasDisponibles, {
                 placeHolder: '🎨 Selecciona tu tema favorito para instalar (o presiona Esc para cancelar)',
@@ -132,26 +135,14 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
             path.join(homeDir, 'OneDrive', 'Documents', 'WindowsPowerShell')
         ];
 
-        // Descargar el tema directamente de la fuente oficial
-        const url = `https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/${tema}.omp.json`;
+        // Leer el tema directamente de la carpeta 'themes' de la extensión
+        const themePath = path.join(__dirname, '..', 'themes', `${tema}.omp.json`);
         
-        let themeJsonTemplate = "";
-        await new Promise<void>((resolve, reject) => {
-            https.get(url, (res) => {
-                if (res.statusCode !== 200) {
-                    reject(new Error(`No se pudo descargar el tema ${tema} de GitHub. (Status: ${res.statusCode})`));
-                    return;
-                }
-                res.on('data', (chunk) => {
-                    themeJsonTemplate += chunk;
-                });
-                res.on('end', () => {
-                    resolve();
-                });
-            }).on('error', (e) => {
-                reject(e);
-            });
-        });
+        if (!fs.existsSync(themePath)) {
+            throw new Error(`El archivo de tema ${tema}.omp.json no se encuentra en la carpeta themes local.`);
+        }
+
+        const themeJsonTemplate = fs.readFileSync(themePath, 'utf8');
 
         // 3. Escribir en todos los perfiles de PowerShell existentes
         let updatedCount = 0;
