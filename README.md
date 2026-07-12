@@ -3,55 +3,34 @@
 ¡Transforma la aburrida terminal por defecto de Visual Studio Code en una herramienta profesional, colorida y con iconos increíbles con un solo comando!
 
 <div align="center">
-<!-- Contenedor Principal de la Terminal -->
-<div style="background-color: #0d1117; border: 1px solid #30363d; border-radius: 6px; font-family: 'FiraCode Nerd Font', 'Segoe UI Mono', monospace; padding: 12px; box-shadow: 0 10px 30px rgba(0,0,0,0.5); color: #c9d1d9; font-size: 13px; line-height: 1.6; text-align: left; max-width: 800px; margin: 0 auto;">
-  
-  <!-- Barra Superior de la Ventana (Botones Mac Style) -->
-  <div style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #21262d; padding-bottom: 8px;">
-    <div style="display: flex; gap: 6px;">
-      <span style="width: 12px; height: 12px; background-color: #ff5f56; border-radius: 50%; display: inline-block;"></span>
-      <span style="width: 12px; height: 12px; background-color: #ffbd2e; border-radius: 50%; display: inline-block;"></span>
-      <span style="width: 12px; height: 12px; background-color: #27c93f; border-radius: 50%; display: inline-block;"></span>
-    </div>
-    <span style="color: #8b949e; font-size: 11px;">pwsh.exe - Terminal Setup Style (Angel-T Dev)</span>
-    <div style="width: 48px;"></div> <!-- Balanceador visual -->
-  </div>
-
-  <!-- Contenido de la Terminal (Línea superior dividida a los extremos) -->
-  <div style="display: flex; justify-content: space-between; align-items: center;">
-    <!-- Lado Izquierdo: Estructura del Prompt -->
-    <div>
-      <span style="color: #00FF9C;">╭─</span>
-      <span style="background-color: #00FF9C; color: #0d1117; padding: 2px 6px; border-radius: 4px 0 0 4px; font-weight: bold;"> Angel-T</span>
-      <span style="color: #00FF9C; background-color: #008F56;"></span>
-      <span style="background-color: #008F56; color: #ffffff; padding: 2px 6px;"> ~/Proyectos/App</span>
-      <span style="color: #008F56; background-color: transparent;"></span>
-      <span style="color: #27c93f; margin-left: 8px;"> main</span>
-      <span style="color: #ffbd2e; margin-left: 4px;">⇡1 📝 +2</span>
-    </div>
-    <!-- Lado Derecho: Tiempos y Estado -->
-    <div style="color: #8b949e; text-align: right;">
-      <span style="color: #50fa7b;">12ms</span> 📊 MEM: <span style="color: #ffb86c;">45.2%</span> <span style="color: #6272a4;">(14/32GB)</span>
-    </div>
-  </div>
-
-  <!-- Segunda Línea: Directorio actual, Prompt y Cursor -->
-  <div style="margin-top: 6px;">
-    <span style="color: #00FF9C;">╰─</span>
-    <span style="color: #27c93f; margin-left: 4px;"> v18.17.0</span>
-    <span style="color: #89B4FA; margin-left: 8px;"> 14:30</span>
-    <span style="color: #00FF9C; margin-left: 8px; font-weight: bold;">❯</span>
-    <!-- Cursor parpadeante simulado -->
-    <span style="background-color: #f8f8f2; color: #f8f8f2; animation: blink 1s infinite; width: 8px; height: 15px; display: inline-block; vertical-align: middle; margin-left: 4px;">_</span>
-  </div>
-
-  <!-- Texto de salida inferior -->
-  <div style="margin-top: 15px; color: #8b949e; font-size: 12px; text-align: right;">
-    Tema en pantalla: <b>angel-cyberpunk</b>
-  </div>
-
+  <img src="https://github.com/user-attachments/assets/c4c0e6f8-df9d-4f5a-be8e-25699a2ab0fd" alt="Vista previa de la terminal de Angel-T Dev" width="800">
 </div>
-</div>
+
+---
+
+## 🎨 Galería de Temas
+
+| Tema | Color Principal | Color Secundario | Vista Previa del Prompt (Estructura) |
+|---|:---:|:---:|---|
+| **angel-default** | ![#FF2A2A](https://img.shields.io/badge/-%23FF2A2A-FF2A2A) | ![#990000](https://img.shields.io/badge/-%23990000-990000) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-cyberpunk** | ![#00FF9C](https://img.shields.io/badge/-%2300FF9C-00FF9C) | ![#008F56](https://img.shields.io/badge/-%23008F56-008F56) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-dracula** | ![#FF79C6](https://img.shields.io/badge/-%23FF79C6-FF79C6) | ![#BD93F9](https://img.shields.io/badge/-%23BD93F9-BD93F9) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-hacker** | ![#00FF00](https://img.shields.io/badge/-%2300FF00-00FF00) | ![#008000](https://img.shields.io/badge/-%23008000-008000) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-tokyo** | ![#7AA2F7](https://img.shields.io/badge/-%237AA2F7-7AA2F7) | ![#9ECE6A](https://img.shields.io/badge/-%239ECE6A-9ECE6A) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-monokai** | ![#FD971F](https://img.shields.io/badge/-%23FD971F-FD971F) | ![#F92672](https://img.shields.io/badge/-%23F92672-F92672) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-ocean** | ![#00A8CC](https://img.shields.io/badge/-%2300A8CC-00A8CC) | ![#142850](https://img.shields.io/badge/-%23142850-142850) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-synthwave** | ![#FF007F](https://img.shields.io/badge/-%23FF007F-FF007F) | ![#3A0CA3](https://img.shields.io/badge/-%233A0CA3-3A0CA3) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-gruvbox** | ![#FE8019](https://img.shields.io/badge/-%23FE8019-FE8019) | ![#D3869B](https://img.shields.io/badge/-%23D3869B-D3869B) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-minimal** | ![#D4D4D4](https://img.shields.io/badge/-%23D4D4D4-D4D4D4) | ![#808080](https://img.shields.io/badge/-%23808080-808080) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-catppuccin**| ![#CBA6F7](https://img.shields.io/badge/-%23CBA6F7-CBA6F7) | ![#89B4FA](https://img.shields.io/badge/-%2389B4FA-89B4FA) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-cobalt2** | ![#FFC600](https://img.shields.io/badge/-%23FFC600-FFC600) | ![#0088FF](https://img.shields.io/badge/-%230088FF-0088FF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-night-owl** | ![#82AAFF](https://img.shields.io/badge/-%2382AAFF-82AAFF) | ![#C792EA](https://img.shields.io/badge/-%23C792EA-C792EA) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-nord** | ![#88C0D0](https://img.shields.io/badge/-%2388C0D0-88C0D0) | ![#5E81AC](https://img.shields.io/badge/-%235E81AC-5E81AC) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-agnoster** | ![#000000](https://img.shields.io/badge/-%23000000-000000) | ![#005FD7](https://img.shields.io/badge/-%23005FD7-005FD7) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-material** | ![#00BCD4](https://img.shields.io/badge/-%2300BCD4-00BCD4) | ![#FF9800](https://img.shields.io/badge/-%23FF9800-FF9800) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-spaceship** | ![#D33682](https://img.shields.io/badge/-%23D33682-D33682) | ![#268BD2](https://img.shields.io/badge/-%23268BD2-268BD2) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-powerlevel10k**| ![#FFD700](https://img.shields.io/badge/-%23FFD700-FFD700) | ![#005FFF](https://img.shields.io/badge/-%23005FFF-005FFF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+| **angel-paradox** | ![#00FF00](https://img.shields.io/badge/-%2300FF00-00FF00) | ![#FF00FF](https://img.shields.io/badge/-%23FF00FF-FF00FF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
 
 ---
 
@@ -92,6 +71,12 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 > 💡 **Tip:** ¿Quieres crear tus propias letras gigantes personalizadas para la terminal? Genera las tuyas usando [TAAG Generator (Font: ANSI Shadow)](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow).
 
 ## 🛠️ Notas de Versión
+
+### v0.0.17
+* **Corrección de Visualización**: Se revirtió la ventana de terminal HTML por la Galería Markdown, ya que GitHub limpia el código CSS complejo por seguridad.
+
+### v0.0.16
+* **Ventana de Terminal Simulada**: Se incorporó (brevemente) una ventana de terminal simulada en HTML, aunque fue revertida por problemas de compatibilidad con GitHub.
 
 ### v0.0.15
 * **Galería Visual de Temas**: Se agregó una simulación visual y galería de los 19 temas disponibles directamente en el `README.md` principal.

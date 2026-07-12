@@ -4,6 +4,12 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.17]
+- 🐛 **Corrección de Visualización**: Se revirtió el diseño HTML de la terminal a Markdown puro (Tabla de Colores), ya que GitHub limpia los estilos CSS por seguridad, lo cual rompía la visualización.
+
+## [0.0.16]
+- 🎨 **Ventana de Terminal Simulada**: Se incorporó una elegante ventana de terminal con renderizado HTML y CSS (estilo Mac) en el README principal.
+
 ## [0.0.15]
 - 🎨 **Galería Visual de Temas**: Se agregó una simulación visual y galería de los 19 temas disponibles directamente en el `README.md` principal.
 
