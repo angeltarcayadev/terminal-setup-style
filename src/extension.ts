@@ -23,15 +23,15 @@ export function activate(context: vscode.ExtensionContext) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
-            let tema = config.get<string>('tema') || 'angel-default';
+            let tema = config.get<string>('tema') || 'jandedobbeleer';
 
             // 1.1 Mostrar un menú (QuickPick) para que el usuario elija su tema favorito
             const temasDisponibles = [
-                'angel-default', 'angel-cyberpunk', 'angel-dracula', 'angel-hacker', 
-                'angel-tokyo', 'angel-monokai', 'angel-ocean', 'angel-synthwave', 
-                'angel-gruvbox', 'angel-minimal', 'angel-catppuccin', 'angel-cobalt2',
-                'angel-night-owl', 'angel-nord', 'angel-agnoster', 'angel-material',
-                'angel-spaceship', 'angel-powerlevel10k', 'angel-paradox'
+                'jandedobbeleer', 'cyberpunk', 'dracula', 'hacker', 
+                'tokyonight_storm', 'monokai', 'blue-owl', 'synthwave', 
+                'gruvbox', 'minimal', 'catppuccin_mocha', 'cobalt2',
+                'night-owl', 'nord', 'agnoster', 'material',
+                'spaceship', 'powerlevel10k_rainbow', 'paradox'
             ];
 
             const seleccion = await vscode.window.showQuickPick(temasDisponibles, {
@@ -86,7 +86,7 @@ export function activate(context: vscode.ExtensionContext) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
-            const tema = config.get<string>('tema') || 'angel-default';
+            const tema = config.get<string>('tema') || 'jandedobbeleer';
             const asciiName = config.get<string>('asciiName') || 'Angel-T Dev';
             const colorAscii = config.get<string>('colorAscii') || 'auto';
 
@@ -119,7 +119,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 export function deactivate() {}
 
-// Función principal de actualización instantánea de configuración local (Generación Dinámica)
+// Función principal de actualización instantánea de configuración local (Descarga desde Oh My Posh)
 async function updateLocalThemeFile(nombre: string, tema: string) {
     try {
         const homeDir = os.homedir();
@@ -132,103 +132,26 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
             path.join(homeDir, 'OneDrive', 'Documents', 'WindowsPowerShell')
         ];
 
-        let colorPrincipal = "#FF2A2A";
-        let colorSecundario = "#990000";
-
-        switch (tema) {
-            case "angel-cyberpunk": colorPrincipal = "#00FF9C"; colorSecundario = "#008F56"; break;
-            case "angel-dracula": colorPrincipal = "#FF79C6"; colorSecundario = "#BD93F9"; break;
-            case "angel-hacker": colorPrincipal = "#00FF00"; colorSecundario = "#008000"; break;
-            case "angel-tokyo": colorPrincipal = "#7AA2F7"; colorSecundario = "#9ECE6A"; break;
-            case "angel-monokai": colorPrincipal = "#FD971F"; colorSecundario = "#F92672"; break;
-            case "angel-ocean": colorPrincipal = "#00A8CC"; colorSecundario = "#142850"; break;
-            case "angel-synthwave": colorPrincipal = "#FF007F"; colorSecundario = "#3A0CA3"; break;
-            case "angel-gruvbox": colorPrincipal = "#FE8019"; colorSecundario = "#D3869B"; break;
-            case "angel-minimal": colorPrincipal = "#D4D4D4"; colorSecundario = "#808080"; break;
-            case "angel-catppuccin": colorPrincipal = "#CBA6F7"; colorSecundario = "#89B4FA"; break;
-            case "angel-cobalt2": colorPrincipal = "#FFC600"; colorSecundario = "#0088FF"; break;
-            case "angel-night-owl": colorPrincipal = "#82AAFF"; colorSecundario = "#C792EA"; break;
-            case "angel-nord": colorPrincipal = "#88C0D0"; colorSecundario = "#5E81AC"; break;
-            case "angel-agnoster": colorPrincipal = "#000000"; colorSecundario = "#005FD7"; break;
-            case "angel-material": colorPrincipal = "#00BCD4"; colorSecundario = "#FF9800"; break;
-            case "angel-spaceship": colorPrincipal = "#D33682"; colorSecundario = "#268BD2"; break;
-            case "angel-powerlevel10k": colorPrincipal = "#FFD700"; colorSecundario = "#005FFF"; break;
-            case "angel-paradox": colorPrincipal = "#00FF00"; colorSecundario = "#FF00FF"; break;
-            default: colorPrincipal = "#FF2A2A"; colorSecundario = "#990000"; break;
-        }
-
-        const themeJsonTemplate = `{
-  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
-  "blocks": [
-    {
-      "alignment": "left",
-      "segments": [
-        {
-          "background": "${colorPrincipal}",
-          "foreground": "#FFFFFF",
-          "leading_diamond": "\\ue0b6",
-          "style": "diamond",
-          "template": " \\uf415 ${nombre} ",
-          "trailing_diamond": "\\ue0c6",
-          "type": "session"
-        },
-        {
-          "background": "${colorSecundario}",
-          "foreground": "#FFFFFF",
-          "leading_diamond": "\\ue0c7",
-          "options": { "style": "folder" },
-          "style": "diamond",
-          "template": " \\uf07b {{ .Path }} ",
-          "trailing_diamond": "\\ue0c6",
-          "type": "path"
-        },
-        {
-          "background": "#424242",
-          "foreground": "${colorPrincipal}",
-          "leading_diamond": "\\ue0c7",
-          "options": { "branch_icon": "" },
-          "style": "diamond",
-          "template": " \\uf126 {{ .HEAD }} ",
-          "trailing_diamond": "\\ue0c6",
-          "type": "git"
-        },
-        {
-          "background": "#2E2E2E",
-          "foreground": "#E4F34A",
-          "leading_diamond": "\\ue0c7",
-          "options": { "fetch_version": false },
-          "style": "diamond",
-          "template": " \\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
-          "trailing_diamond": "\\ue0c6",
-          "type": "python"
-        },
-        {
-          "background": "#2E2E2E",
-          "foreground": "#42E66C",
-          "leading_diamond": "\\ue0c7",
-          "options": { "fetch_version": false },
-          "style": "diamond",
-          "template": " \\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
-          "trailing_diamond": "\\ue0c6",
-          "type": "node"
-        },
-        {
-          "background": "#1A1A1A",
-          "foreground": "#FFFFFF",
-          "leading_diamond": "\\ue0c7",
-          "options": { "time_format": "15:04" },
-          "style": "diamond",
-          "template": " \\uf017 {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "\\ue0b4",
-          "type": "time"
-        }
-      ],
-      "type": "prompt"
-    }
-  ],
-  "final_space": true,
-  "version": 4
-}`;
+        // Descargar el tema directamente de la fuente oficial
+        const url = `https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/${tema}.omp.json`;
+        
+        let themeJsonTemplate = "";
+        await new Promise<void>((resolve, reject) => {
+            https.get(url, (res) => {
+                if (res.statusCode !== 200) {
+                    reject(new Error(`No se pudo descargar el tema ${tema} de GitHub. (Status: ${res.statusCode})`));
+                    return;
+                }
+                res.on('data', (chunk) => {
+                    themeJsonTemplate += chunk;
+                });
+                res.on('end', () => {
+                    resolve();
+                });
+            }).on('error', (e) => {
+                reject(e);
+            });
+        });
 
         // 3. Escribir en todos los perfiles de PowerShell existentes
         let updatedCount = 0;
@@ -242,7 +165,7 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
         }
 
         if (updatedCount > 0) {
-            vscode.window.showInformationMessage(`🎨 Tema de terminal actualizado a '${tema}' con nombre '${nombre}'. Abre una nueva terminal para ver los cambios.`);
+            vscode.window.showInformationMessage(`🎨 Tema de terminal actualizado a '${tema}' oficial de Oh My Posh. Abre una nueva terminal para ver los cambios.`);
         }
     } catch (err: any) {
         console.error('[TerminalSetup] Error actualizando el archivo local de tema:', err);
@@ -265,24 +188,24 @@ async function updateLocalProfile(asciiName: string, asciiColor: string, tema: s
         let finalColor = asciiColor;
         if (asciiColor === 'auto') {
             switch (tema) {
-                case "angel-cyberpunk": finalColor = "Cyan"; break;
-                case "angel-dracula": finalColor = "Magenta"; break;
-                case "angel-hacker": finalColor = "Green"; break;
-                case "angel-tokyo": finalColor = "Blue"; break;
-                case "angel-monokai": finalColor = "Yellow"; break;
-                case "angel-ocean": finalColor = "Cyan"; break;
-                case "angel-synthwave": finalColor = "Magenta"; break;
-                case "angel-gruvbox": finalColor = "Yellow"; break;
-                case "angel-minimal": finalColor = "White"; break;
-                case "angel-catppuccin": finalColor = "Magenta"; break;
-                case "angel-cobalt2": finalColor = "Yellow"; break;
-                case "angel-night-owl": finalColor = "Blue"; break;
-                case "angel-nord": finalColor = "Cyan"; break;
-                case "angel-agnoster": finalColor = "Blue"; break;
-                case "angel-material": finalColor = "Cyan"; break;
-                case "angel-spaceship": finalColor = "Magenta"; break;
-                case "angel-powerlevel10k": finalColor = "Yellow"; break;
-                case "angel-paradox": finalColor = "Green"; break;
+                case "cyberpunk": finalColor = "Cyan"; break;
+                case "dracula": finalColor = "Magenta"; break;
+                case "hacker": finalColor = "Green"; break;
+                case "tokyonight_storm": finalColor = "Blue"; break;
+                case "monokai": finalColor = "Yellow"; break;
+                case "blue-owl": finalColor = "Cyan"; break;
+                case "synthwave": finalColor = "Magenta"; break;
+                case "gruvbox": finalColor = "Yellow"; break;
+                case "minimal": finalColor = "White"; break;
+                case "catppuccin_mocha": finalColor = "Magenta"; break;
+                case "cobalt2": finalColor = "Yellow"; break;
+                case "night-owl": finalColor = "Blue"; break;
+                case "nord": finalColor = "Cyan"; break;
+                case "agnoster": finalColor = "Blue"; break;
+                case "material": finalColor = "Cyan"; break;
+                case "spaceship": finalColor = "Magenta"; break;
+                case "powerlevel10k_rainbow": finalColor = "Yellow"; break;
+                case "paradox": finalColor = "Green"; break;
                 default: finalColor = "Red"; break;
             }
         }
@@ -300,7 +223,7 @@ async function updateLocalProfile(asciiName: string, asciiColor: string, tema: s
         }
 
         // Preparar el string escapando comillas para PowerShell
-        const arteSafe = asciiArt.replace(/"/g, '\`"');
+        const arteSafe = asciiArt.replace(/"/g, '`"');
 
         const profileCode = `Invoke-Expression (@(& 'oh-my-posh' init pwsh --config '~\\Documents\\PowerShell\\custom-theme.omp.json') -join "\\n")
 Import-Module Terminal-Icons

@@ -4,6 +4,11 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.1.3]
+- 💎 **Diseños Premium Dinámicos**: ¡Rediseño visual masivo! Ahora los temas no solo cambian de color, sino que incluyen **múltiples estructuras arquitectónicas** (bordes redondeados, estilo powerline, diamantes, minimalista y rectos).
+- ☁️ **Sincronización en la Nube**: Para garantizar la máxima calidad de los diseños y que obtengas siempre la versión más moderna y perfecta, la arquitectura de los temas ahora se descarga dinámicamente en tiempo real al aplicar tu selección.
+- ✨ **Mejora del Instalador**: El script de instalación también se ha unificado con este motor de descarga en la nube, garantizando que los diseños se inyecten de forma óptima manteniendo tu logo ASCII intacto en cualquier entorno.
+
 ## [0.1.2]
 - ✨ **Arte ASCII Dinámico**: Integración del paquete `figlet` para generar texto ASCII gigante nativamente en TypeScript. Ahora se puede cambiar el banner del perfil al instante desde la configuración de VS Code.
 - 🖼️ **Nueva Galería de Temas (PNG)**: Rediseño completo de la tabla del README.md, ahora es una cuadrícula centrada con imágenes reales `.png` para asegurar compatibilidad total con la publicación en Marketplace de VS Code.
