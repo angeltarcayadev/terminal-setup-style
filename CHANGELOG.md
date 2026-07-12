@@ -5,7 +5,12 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
-## [0.1.16] - Reciente
+## [0.1.17] - Reciente
+### Correcciones
+- Solucionado el error `command not found` limpiando la caché de dependencias y re-empaquetando la extensión con soporte total para `figlet`.
+- Se redirigió el script de instalación (`install.ps1`) para descargar los temas desde nuestro repositorio nativo en vez del de Oh My Posh, solucionando las descargas rotas de los temas personalizados (`oficial_premium`, `custom_pastel`, etc.).
+
+## [0.1.16] - Anterior
 ### Añadido
 - Primera prueba de extremo a extremo de la nueva automatización completa de lanzamientos (Release Skill) utilizando la CLI de GitHub.
 
