@@ -4,8 +4,11 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.15]
+- 🎨 **Galería Visual de Temas**: Se agregó una simulación visual y galería de los 19 temas disponibles directamente en el `README.md` principal.
+
 ## [0.0.14]
-- ✨ **9 Nuevos Temas Inspirados**: Se integraron 9 temas inspirados en los mejores diseños de Oh My Posh adaptados a nuestro estilo (`catppuccin`, `cobalt2`, `night-owl`, `nord`, `agnoster`, `material`, `spaceship`, `powerlevel10k`, `paradox`).
+- ✨ **9 Nuevos Temas Inspirados**: Se integraron 9 temas nuevos (`catppuccin`, `cobalt2`, `night-owl`, `nord`, `agnoster`, `material`, `spaceship`, `powerlevel10k`, `paradox`).
 
 ## [0.0.13]
 - 🎨 **Personalización Total de ASCII**: Nuevo ajuste en VS Code para cambiar dinámicamente el color del arte ASCII, y se añadió enlace al generador de letras en la documentación.
