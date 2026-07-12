@@ -1,4 +1,4 @@
-# Registro de Cambios (Changelog)
+﻿# Registro de Cambios (Changelog)
 
 Todos los cambios notables en este proyecto se documentarán en este archivo.
 
