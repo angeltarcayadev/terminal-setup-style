@@ -7,6 +7,16 @@ import * as https from 'https';
 export function activate(context: vscode.ExtensionContext) {
     console.log('¡La extensión "Terminal Setup Style" está activa!');
 
+    // 0. Auto-ejecutar el menú la primera vez que se instala
+    const isFirstRun = !context.globalState.get('terminalSetupStyle_hasRun');
+    if (isFirstRun) {
+        context.globalState.update('terminalSetupStyle_hasRun', true);
+        // Retrasamos un segundo para asegurarnos de que la interfaz de VS Code esté lista
+        setTimeout(() => {
+            vscode.commands.executeCommand('terminal-setup-style.install');
+        }, 1500);
+    }
+
     // 1. Registrar el comando de instalación de la terminal
     let installDisposable = vscode.commands.registerCommand('terminal-setup-style.install', async () => {
         try {
