@@ -2,9 +2,14 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.0.1",
+  "version": "0.0.4",
   "publisher": "angel-t-dev",
-  "icon": "Icons/Icons.png",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/angeltarcayadev/Terminal-Setup.git"
+  },
+  "icon": "icon.png",
   "engines": {
     "vscode": "^1.125.0"
   },
@@ -19,7 +24,39 @@
         "command": "terminal-setup-style.install",
         "title": "Angel-T Dev: Instalar Terminal Setup"
       }
-    ]
+    ],
+    "configuration": {
+      "title": "Terminal Setup Style",
+      "properties": {
+        "terminalSetup.nombre": {
+          "type": "string",
+          "default": "Angel-T Dev",
+          "description": "Nombre que aparecerá en tu terminal."
+        },
+        "terminalSetup.fuente": {
+          "type": "string",
+          "default": "CaskaydiaCove Nerd Font",
+          "description": "Nombre de la fuente (debe estar instalada)."
+        },
+        "terminalSetup.tema": {
+          "type": "string",
+          "default": "angel-default",
+          "enum": [
+            "angel-default",
+            "angel-cyberpunk",
+            "angel-dracula",
+            "angel-hacker",
+            "angel-tokyo",
+            "angel-monokai",
+            "angel-ocean",
+            "angel-synthwave",
+            "angel-gruvbox",
+            "angel-minimal"
+          ],
+          "description": "Selecciona tu tema favorito."
+        }
+      }
+    }
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",

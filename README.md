@@ -30,12 +30,32 @@ Para que la terminal pueda mostrar los íconos (y no veas cuadros extraños), tu
 3. Escribe y selecciona el comando: **`Angel-T Dev: Instalar Terminal Setup`**.
 4. ¡Espera el mensaje de éxito, abre una nueva terminal y disfruta tu nuevo entorno!
 
+## ⚙️ Personalización (Configuración)
+
+Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Code para que puedas modificar tus parámetros de forma integrada y sin complicaciones:
+
+1. Abre la configuración de VS Code presionando `Ctrl` + `,` (o ve a *Archivo > Preferencias > Configuración*).
+2. En la barra de búsqueda superior, escribe: **`Terminal Setup Style`**.
+3. Verás los campos de personalización listos para ser editados:
+   * **Nombre**: El nombre que se mostrará en tu prompt de PowerShell.
+   * **Fuente**: El nombre de tu Nerd Font instalada.
+   * **Tema**: Menú desplegable para seleccionar tu tema de Oh My Posh favorito.
+4. Modifica los valores. Se guardarán automáticamente de forma global en tu VS Code.
+5. Abre la Paleta de Comandos (`Ctrl` + `Shift` + `P`) y ejecuta **`Angel-T Dev: Instalar Terminal Setup`** para aplicar e instalar la terminal con tu nueva configuración.
+
 ## 🛠️ Notas de Versión
 
 ### v0.0.1
-* Lanzamiento inicial de la extensión.
-* Conexión con el script de instalación remoto en GitHub.
-* Configuración automática de la fuente `CaskaydiaCove Nerd Font` en VS Code.
+* Integración nativa con la interfaz de Configuración de VS Code.
+* Conexión directa con el script instalador remoto pasando variables de entorno personalizadas de manera segura.
+* Script build-release.ps1 automatizado para empaquetado fácil y versionado dinámico.
+* Soporte MIT Open Source y licencia oficial en el repositorio.
+
+---
+
+## 📄 Licencia
+
+Este proyecto está bajo la Licencia **MIT**. Consulta el código fuente y úsalo libremente para tus desarrollos.
 
 ---
 *Desarrollado con 💻 y ☕ por [Angel Eduardo Tarcaya](https://github.com/angeltarcayadev)*
