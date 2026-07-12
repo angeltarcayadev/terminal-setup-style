@@ -12,61 +12,61 @@
 
 <div align="center">
   <b>angel-default</b><br>
-  <img src="./assets/default.png" width="400"><br><br>
+  <img src="./assets/default.png" width="800"><br><br>
   
   <b>angel-cyberpunk</b><br>
-  <img src="./assets/cyberpunk.png" width="400"><br><br>
+  <img src="./assets/cyberpunk.png" width="800"><br><br>
 
   <b>angel-dracula</b><br>
-  <img src="./assets/dracula.png" width="400"><br><br>
+  <img src="./assets/dracula.png" width="800"><br><br>
 
   <b>angel-hacker</b><br>
-  <img src="./assets/hacker.png" width="400"><br><br>
+  <img src="./assets/hacker.png" width="800"><br><br>
 
   <b>angel-tokyo</b><br>
-  <img src="./assets/tokyo.png" width="400"><br><br>
+  <img src="./assets/tokyo.png" width="800"><br><br>
 
   <b>angel-monokai</b><br>
-  <img src="./assets/monokai.png" width="400"><br><br>
+  <img src="./assets/monokai.png" width="800"><br><br>
 
   <b>angel-ocean</b><br>
-  <img src="./assets/ocean.png" width="400"><br><br>
+  <img src="./assets/ocean.png" width="800"><br><br>
 
   <b>angel-synthwave</b><br>
-  <img src="./assets/synthwave.png" width="400"><br><br>
+  <img src="./assets/synthwave.png" width="800"><br><br>
 
   <b>angel-gruvbox</b><br>
-  <img src="./assets/gruvbox.png" width="400"><br><br>
+  <img src="./assets/gruvbox.png" width="800"><br><br>
 
   <b>angel-minimal</b><br>
-  <img src="./assets/minimal.png" width="400"><br><br>
+  <img src="./assets/minimal.png" width="800"><br><br>
 
   <b>angel-catppuccin</b><br>
-  <img src="./assets/catppuccin.png" width="400"><br><br>
+  <img src="./assets/catppuccin.png" width="800"><br><br>
 
   <b>angel-cobalt2</b><br>
-  <img src="./assets/cobalt2.png" width="400"><br><br>
+  <img src="./assets/cobalt2.png" width="800"><br><br>
 
   <b>angel-night-owl</b><br>
-  <img src="./assets/night-owl.png" width="400"><br><br>
+  <img src="./assets/night-owl.png" width="800"><br><br>
 
   <b>angel-nord</b><br>
-  <img src="./assets/nord.png" width="400"><br><br>
+  <img src="./assets/nord.png" width="800"><br><br>
 
   <b>angel-agnoster</b><br>
-  <img src="./assets/agnoster.png" width="400"><br><br>
+  <img src="./assets/agnoster.png" width="800"><br><br>
 
   <b>angel-material</b><br>
-  <img src="./assets/material.png" width="400"><br><br>
+  <img src="./assets/material.png" width="800"><br><br>
 
   <b>angel-spaceship</b><br>
-  <img src="./assets/spaceship.png" width="400"><br><br>
+  <img src="./assets/spaceship.png" width="800"><br><br>
 
   <b>angel-powerlevel10k</b><br>
-  <img src="./assets/powerlevel10k.png" width="400"><br><br>
+  <img src="./assets/powerlevel10k.png" width="800"><br><br>
 
   <b>angel-paradox</b><br>
-  <img src="./assets/paradox.png" width="400"><br><br>
+  <img src="./assets/paradox.png" width="800"><br><br>
 </div>
 
 ---
