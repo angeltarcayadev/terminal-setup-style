@@ -4,6 +4,10 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.1.5]
+- 🎨 **Regreso a SVG Puro**: Se revirtió la galería a formato vectorial `.svg` nativo a petición del usuario para garantizar la calidad visual más perfecta con las etiquetas HTML `<div>` e `<img>`, ignorando advertencias obsoletas de ciertos parsers.
+- 🧹 **Limpieza Total**: Eliminación de todos los scripts temporales, imágenes `.png` innecesarias y cachés de renderizado residual.
+
 ## [0.1.4]
 - 🖼️ **Galería Completamente Restaurada**: Conversión nativa a imágenes PNG premium para garantizar renderizado perfecto y evitar los baneos de SVG en VS Code Marketplace.
 - 🚀 **Optimización de Rendimiento**: Mejora en los metadatos de activación (`activationEvents`) para iniciar solo cuando sea necesario.

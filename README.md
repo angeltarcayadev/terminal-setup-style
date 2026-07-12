@@ -15,64 +15,104 @@ Para garantizar la máxima calidad en los diseños, los temas incluyen **múltip
 
 <h3>🎨 Galería de Temas</h3>
 
-<div align="center">
-  <b>jandedobbeleer</b><br>
-  <img src="./assets/default.png" width="800"><br><br>
-  
-  <b>cyberpunk</b><br>
-  <img src="./assets/cyberpunk.png" width="800"><br><br>
-
-  <b>dracula</b><br>
-  <img src="./assets/dracula.png" width="800"><br><br>
-
-  <b>hacker</b><br>
-  <img src="./assets/hacker.png" width="800"><br><br>
-
-  <b>tokyonight_storm</b><br>
-  <img src="./assets/tokyo.png" width="800"><br><br>
-
-  <b>monokai</b><br>
-  <img src="./assets/monokai.png" width="800"><br><br>
-
-  <b>blue-owl</b><br>
-  <img src="./assets/ocean.png" width="800"><br><br>
-
-  <b>synthwave</b><br>
-  <img src="./assets/synthwave.png" width="800"><br><br>
-
-  <b>gruvbox</b><br>
-  <img src="./assets/gruvbox.png" width="800"><br><br>
-
-  <b>minimal</b><br>
-  <img src="./assets/minimal.png" width="800"><br><br>
-
-  <b>catppuccin_mocha</b><br>
-  <img src="./assets/catppuccin.png" width="800"><br><br>
-
-  <b>cobalt2</b><br>
-  <img src="./assets/cobalt2.png" width="800"><br><br>
-
-  <b>night-owl</b><br>
-  <img src="./assets/night-owl.png" width="800"><br><br>
-
-  <b>nord</b><br>
-  <img src="./assets/nord.png" width="800"><br><br>
-
-  <b>agnoster</b><br>
-  <img src="./assets/agnoster.png" width="800"><br><br>
-
-  <b>material</b><br>
-  <img src="./assets/material.png" width="800"><br><br>
-
-  <b>spaceship</b><br>
-  <img src="./assets/spaceship.png" width="800"><br><br>
-
-  <b>powerlevel10k_rainbow</b><br>
-  <img src="./assets/powerlevel10k.png" width="800"><br><br>
-
-  <b>paradox</b><br>
-  <img src="./assets/paradox.png" width="800"><br><br>
-</div>
+<table align="center" width="100%">
+  <tr>
+    <td align="center" width="50%">
+      <b>jandedobbeleer</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/default.png" alt="jandedobbeleer" width="100%">
+    </td>
+    <td align="center" width="50%">
+      <b>cyberpunk</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/cyberpunk.png" alt="cyberpunk" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>dracula</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/dracula.png" alt="dracula" width="100%">
+    </td>
+    <td align="center">
+      <b>hacker</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/hacker.png" alt="hacker" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>tokyonight_storm</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/tokyo.png" alt="tokyonight_storm" width="100%">
+    </td>
+    <td align="center">
+      <b>monokai</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/monokai.png" alt="monokai" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>blue-owl</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/ocean.png" alt="blue-owl" width="100%">
+    </td>
+    <td align="center">
+      <b>synthwave</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/synthwave.png" alt="synthwave" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>gruvbox</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/gruvbox.png" alt="gruvbox" width="100%">
+    </td>
+    <td align="center">
+      <b>minimal</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/minimal.png" alt="minimal" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>catppuccin_mocha</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/catppuccin.png" alt="catppuccin_mocha" width="100%">
+    </td>
+    <td align="center">
+      <b>cobalt2</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/cobalt2.png" alt="cobalt2" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>night-owl</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/night-owl.png" alt="night-owl" width="100%">
+    </td>
+    <td align="center">
+      <b>nord</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/nord.png" alt="nord" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>agnoster</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/agnoster.png" alt="agnoster" width="100%">
+    </td>
+    <td align="center">
+      <b>material</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/material.png" alt="material" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center">
+      <b>spaceship</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/spaceship.png" alt="spaceship" width="100%">
+    </td>
+    <td align="center">
+      <b>powerlevel10k_rainbow</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/powerlevel10k.png" alt="powerlevel10k_rainbow" width="100%">
+    </td>
+  </tr>
+  <tr>
+    <td align="center" colspan="2" width="50%">
+      <b>paradox</b><br>
+      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/paradox.png" alt="paradox" width="50%">
+    </td>
+  </tr>
+</table>
 
 ---
 
@@ -113,6 +153,10 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 > 💡 **Tip:** ¿Quieres crear tus propias letras gigantes personalizadas para la terminal? Genera las tuyas usando [TAAG Generator (Font: ANSI Shadow)](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow).
 
 ## 🛠️ Notas de Versión
+
+### v0.1.5
+* **Galería en SVG Puro**: Regreso a la tecnología `.png` nativa para máxima nitidez y calidad visual (sin PNGs intermedios).
+* **Limpieza y Optimización**: Eliminación de dependencias y cachés para un peso de paquete ultra ligero.
 
 ### v0.1.4
 * **Galería Restaurada (PNG)**: Conversión de las previas a imágenes nativas `.png` de alta resolución para cumplir con los lineamientos estrictos del Marketplace.
