@@ -43,21 +43,34 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 
 ## 🛠️ Notas de Versión
 
+### v0.0.12
+* **Documentación Histórica**: Reconstrucción y sincronización completa del historial de versiones desde el inicio del proyecto.
+
 ### v0.0.11
 * **Sistema de Lanzamientos con IA**: Integración de una habilidad inteligente que automatiza la creación de notas de versión y sincroniza los archivos `.md`.
 
 ### v0.0.10
 * **Auto-Arranque Inteligente**: El menú interactivo de temas se ejecuta automáticamente la primera vez que instalas la extensión, guiando al usuario de inmediato.
 
-### v0.0.7
+### v0.0.9
+* **Sincronización Dinámica de Configuración**: Mejoras en la gestión dinámica de configuraciones desde `extension.ts` para aplicar temas instantáneamente sin recargar.
+
+### v0.0.8 / v0.0.7
 * **Menú Interactivo (QuickPick)**: Se agregó un menú desplegable para elegir el tema directamente al ejecutar el comando.
 * **Generación Dinámica de Temas**: Ahora los archivos `.omp.json` se generan dinámicamente con los colores exactos seleccionados.
 * **Descarga Automática de Fuentes**: Instalación de Nerd Fonts de forma silenciosa y sin permisos de administrador.
 
+### v0.0.6 / v0.0.5
+* **Comando de Instalación Integrado**: Implementación de la lógica principal para la sincronización de temas y la ejecución remota de instalación desde la terminal.
+
+### v0.0.4 / v0.0.2
+* **Mejoras Visuales e Integración**: Adición del logo oficial (`icon.png`) y optimización de la estructura. 
+* Añadidas las configuraciones personalizadas al panel de VS Code (Nombre, Fuente y Tema).
+* Creación del script `build-release.ps1` para un empaquetado y versionado automatizado.
+
 ### v0.0.1
-* Integración nativa con la interfaz de Configuración de VS Code.
-* Conexión directa con el script instalador remoto pasando variables de entorno personalizadas de manera segura.
-* Script build-release.ps1 automatizado para empaquetado fácil y versionado dinámico.
+* Lanzamiento inicial del repositorio.
+* Conexión directa con el script instalador remoto de PowerShell pasando variables de entorno de manera segura.
 * Soporte MIT Open Source y licencia oficial en el repositorio.
 
 ---
