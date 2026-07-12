@@ -19,97 +19,97 @@ Para garantizar la máxima calidad en los diseños, los temas incluyen **múltip
   <tr>
     <td align="center" width="50%">
       <b>jandedobbeleer</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/default.png" alt="jandedobbeleer" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/default.svg" alt="jandedobbeleer" width="100%">
     </td>
     <td align="center" width="50%">
       <b>cyberpunk</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/cyberpunk.png" alt="cyberpunk" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/cyberpunk.svg" alt="cyberpunk" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>dracula</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/dracula.png" alt="dracula" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/dracula.svg" alt="dracula" width="100%">
     </td>
     <td align="center">
       <b>hacker</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/hacker.png" alt="hacker" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/hacker.svg" alt="hacker" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>tokyonight_storm</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/tokyo.png" alt="tokyonight_storm" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/tokyo.svg" alt="tokyonight_storm" width="100%">
     </td>
     <td align="center">
       <b>monokai</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/monokai.png" alt="monokai" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/monokai.svg" alt="monokai" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>blue-owl</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/ocean.png" alt="blue-owl" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/ocean.svg" alt="blue-owl" width="100%">
     </td>
     <td align="center">
       <b>synthwave</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/synthwave.png" alt="synthwave" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/synthwave.svg" alt="synthwave" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>gruvbox</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/gruvbox.png" alt="gruvbox" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/gruvbox.svg" alt="gruvbox" width="100%">
     </td>
     <td align="center">
       <b>minimal</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/minimal.png" alt="minimal" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/minimal.svg" alt="minimal" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>catppuccin_mocha</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/catppuccin.png" alt="catppuccin_mocha" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/catppuccin.svg" alt="catppuccin_mocha" width="100%">
     </td>
     <td align="center">
       <b>cobalt2</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/cobalt2.png" alt="cobalt2" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/cobalt2.svg" alt="cobalt2" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>night-owl</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/night-owl.png" alt="night-owl" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/night-owl.svg" alt="night-owl" width="100%">
     </td>
     <td align="center">
       <b>nord</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/nord.png" alt="nord" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/nord.svg" alt="nord" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>agnoster</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/agnoster.png" alt="agnoster" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/agnoster.svg" alt="agnoster" width="100%">
     </td>
     <td align="center">
       <b>material</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/material.png" alt="material" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/material.svg" alt="material" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>spaceship</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/spaceship.png" alt="spaceship" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/spaceship.svg" alt="spaceship" width="100%">
     </td>
     <td align="center">
       <b>powerlevel10k_rainbow</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/powerlevel10k.png" alt="powerlevel10k_rainbow" width="100%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/powerlevel10k.svg" alt="powerlevel10k_rainbow" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2" width="50%">
       <b>paradox</b><br>
-      <img src="https://github.com/angeltarcayadev/terminal-setup-style/raw/main/assets/paradox.png" alt="paradox" width="50%">
+      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/paradox.svg" alt="paradox" width="50%">
     </td>
   </tr>
 </table>
