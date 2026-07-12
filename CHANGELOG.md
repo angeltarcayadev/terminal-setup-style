@@ -5,7 +5,11 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
-## [0.1.14] - Reciente
+## [0.1.15] - Reciente
+### Correcciones
+- La insignia de versión en el README ahora apunta dinámicamente al archivo `package.json` para reflejar la versión correcta.
+
+## [0.1.14] - Anterior
 ### Correcciones
 - Reempaquetado del archivo `.vsix` para asegurar la correcta estabilización del parche de comandos y activación.
 
