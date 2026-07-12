@@ -56,13 +56,16 @@ export function activate(context: vscode.ExtensionContext) {
                 vscode.ConfigurationTarget.Global
             );
 
+            // Obtener el color ASCII configurado
+            const colorAscii = config.get<string>('colorAscii') || 'auto';
+
             // Crear y mostrar la terminal de instalación
             const terminal = vscode.window.createTerminal(`Instalador Angel-T Dev`);
             terminal.show();
 
             // Ejecutar el script remoto pasando las variables configuradas
             const scriptUrl = "https://raw.githubusercontent.com/angeltarcayadev/Terminal-Setup/main/install.ps1";
-            const envVars = `$env:TERMINAL_NOMBRE='${nombre}'; $env:USER_NAME='${nombre}'; $env:TERMINAL_TEMA='${tema}'; $env:SELECTED_THEME='${tema}';`;
+            const envVars = `$env:TERMINAL_NOMBRE='${nombre}'; $env:USER_NAME='${nombre}'; $env:TERMINAL_TEMA='${tema}'; $env:SELECTED_THEME='${tema}'; $env:TERMINAL_COLOR_ASCII='${colorAscii}';`;
             const command = `${envVars} Set-ExecutionPolicy RemoteSigned -Scope CurrentUser -Force; irm "${scriptUrl}" | iex`;
             
             terminal.sendText(command);

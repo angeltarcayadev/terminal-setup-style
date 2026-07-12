@@ -4,6 +4,9 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.0.13]
+- 🎨 **Personalización Total de ASCII**: Nuevo ajuste en VS Code para cambiar dinámicamente el color del arte ASCII, y se añadió enlace al generador de letras en la documentación.
+
 ## [0.0.12]
 - 📖 **Documentación Histórica**: Reconstrucción y sincronización completa del historial de versiones desde el inicio del proyecto hasta hoy.
 

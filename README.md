@@ -38,10 +38,16 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
    * **Nombre**: El nombre que se mostrará en tu prompt de PowerShell.
    * **Fuente**: El nombre de tu Nerd Font instalada.
    * **Tema**: Menú desplegable para seleccionar tu tema de Oh My Posh favorito.
+   * **Color ASCII**: Menú desplegable para elegir el color del Arte ASCII de bienvenida (usa 'auto' para usar el del tema).
 4. Modifica los valores. Se guardarán automáticamente de forma global en tu VS Code.
 5. Abre la Paleta de Comandos (`Ctrl` + `Shift` + `P`) y ejecuta **`Angel-T Dev: Instalar Terminal Setup`** para aplicar e instalar la terminal con tu nueva configuración.
 
+> 💡 **Tip:** ¿Quieres crear tus propias letras gigantes personalizadas para la terminal? Genera las tuyas usando [TAAG Generator (Font: ANSI Shadow)](https://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow).
+
 ## 🛠️ Notas de Versión
+
+### v0.0.13
+* **Personalización Total de ASCII**: Nuevo ajuste en VS Code para cambiar dinámicamente el color del arte ASCII, y se añadió enlace al generador de letras en la documentación.
 
 ### v0.0.12
 * **Documentación Histórica**: Reconstrucción y sincronización completa del historial de versiones desde el inicio del proyecto.

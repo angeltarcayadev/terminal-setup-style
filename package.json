@@ -2,7 +2,7 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.0.12",
+  "version": "0.0.13",
   "publisher": "angel-t-dev",
   "license": "MIT",
   "repository": {
@@ -56,6 +56,30 @@
             "angel-minimal"
           ],
           "description": "Selecciona tu tema favorito."
+        },
+        "terminalSetup.colorAscii": {
+          "type": "string",
+          "default": "auto",
+          "enum": [
+            "auto",
+            "Black",
+            "DarkBlue",
+            "DarkGreen",
+            "DarkCyan",
+            "DarkRed",
+            "DarkMagenta",
+            "DarkYellow",
+            "Gray",
+            "DarkGray",
+            "Blue",
+            "Green",
+            "Cyan",
+            "Red",
+            "Magenta",
+            "Yellow",
+            "White"
+          ],
+          "description": "Color del arte ASCII. Selecciona 'auto' para sincronizar con el tema."
         }
       }
     }
