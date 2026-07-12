@@ -17,11 +17,9 @@
 
 ## 📋 Requisitos Previos
 
-Para que la terminal pueda mostrar los íconos (y no veas cuadros extraños), tu computadora necesita tener instalada una **Nerd Font**. 
+¡Buenas noticias! A partir de la versión **0.0.7**, la extensión **descarga e instala automáticamente** las fuentes necesarias (*FiraCode Nerd Font* y *CaskaydiaCove Nerd Font*) en tu perfil de usuario (sin requerir permisos de administrador). 
 
-👉 **[Descargar Cascadia Code Nerd Font](https://github.com/ryanoasis/nerd-fonts/releases/download/v3.2.1/CascadiaCode.zip)**
-
-*Descarga el `.zip`, extrae los archivos `.ttf`, haz clic derecho sobre ellos y selecciona "Instalar".*
+*Nota: Solo si experimentas algún fallo en la descarga automática, puedes instalarlas manualmente desde la página de [Nerd Fonts](https://www.nerdfonts.com/).*
 
 ## 🚀 Cómo Usarla
 
@@ -44,6 +42,11 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 5. Abre la Paleta de Comandos (`Ctrl` + `Shift` + `P`) y ejecuta **`Angel-T Dev: Instalar Terminal Setup`** para aplicar e instalar la terminal con tu nueva configuración.
 
 ## 🛠️ Notas de Versión
+
+### v0.0.7
+* **Menú Interactivo (QuickPick)**: Se agregó un menú desplegable para elegir el tema directamente al ejecutar el comando.
+* **Generación Dinámica de Temas**: Ahora los archivos `.omp.json` se generan dinámicamente con los colores exactos seleccionados.
+* **Descarga Automática de Fuentes**: Instalación de Nerd Fonts de forma silenciosa y sin permisos de administrador.
 
 ### v0.0.1
 * Integración nativa con la interfaz de Configuración de VS Code.
