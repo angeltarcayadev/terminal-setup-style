@@ -29,7 +29,9 @@ export function activate(context: vscode.ExtensionContext) {
             const temasDisponibles = [
                 'angel-default', 'angel-cyberpunk', 'angel-dracula', 'angel-hacker', 
                 'angel-tokyo', 'angel-monokai', 'angel-ocean', 'angel-synthwave', 
-                'angel-gruvbox', 'angel-minimal'
+                'angel-gruvbox', 'angel-minimal', 'angel-catppuccin', 'angel-cobalt2',
+                'angel-night-owl', 'angel-nord', 'angel-agnoster', 'angel-material',
+                'angel-spaceship', 'angel-powerlevel10k', 'angel-paradox'
             ];
 
             const seleccion = await vscode.window.showQuickPick(temasDisponibles, {
@@ -135,6 +137,15 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
             case "angel-synthwave": colorPrincipal = "#FF007F"; colorSecundario = "#3A0CA3"; break;
             case "angel-gruvbox": colorPrincipal = "#FE8019"; colorSecundario = "#D3869B"; break;
             case "angel-minimal": colorPrincipal = "#D4D4D4"; colorSecundario = "#808080"; break;
+            case "angel-catppuccin": colorPrincipal = "#CBA6F7"; colorSecundario = "#89B4FA"; break;
+            case "angel-cobalt2": colorPrincipal = "#FFC600"; colorSecundario = "#0088FF"; break;
+            case "angel-night-owl": colorPrincipal = "#82AAFF"; colorSecundario = "#C792EA"; break;
+            case "angel-nord": colorPrincipal = "#88C0D0"; colorSecundario = "#5E81AC"; break;
+            case "angel-agnoster": colorPrincipal = "#000000"; colorSecundario = "#005FD7"; break;
+            case "angel-material": colorPrincipal = "#00BCD4"; colorSecundario = "#FF9800"; break;
+            case "angel-spaceship": colorPrincipal = "#D33682"; colorSecundario = "#268BD2"; break;
+            case "angel-powerlevel10k": colorPrincipal = "#FFD700"; colorSecundario = "#005FFF"; break;
+            case "angel-paradox": colorPrincipal = "#00FF00"; colorSecundario = "#FF00FF"; break;
             default: colorPrincipal = "#FF2A2A"; colorSecundario = "#990000"; break;
         }
 

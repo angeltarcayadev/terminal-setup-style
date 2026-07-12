@@ -2,7 +2,7 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.0.13",
+  "version": "0.0.14",
   "publisher": "angel-t-dev",
   "license": "MIT",
   "repository": {
@@ -53,7 +53,16 @@
             "angel-ocean",
             "angel-synthwave",
             "angel-gruvbox",
-            "angel-minimal"
+            "angel-minimal",
+            "angel-catppuccin",
+            "angel-cobalt2",
+            "angel-night-owl",
+            "angel-nord",
+            "angel-agnoster",
+            "angel-material",
+            "angel-spaceship",
+            "angel-powerlevel10k",
+            "angel-paradox"
           ],
           "description": "Selecciona tu tema favorito."
         },

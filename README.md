@@ -46,6 +46,9 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 
 ## 🛠️ Notas de Versión
 
+### v0.0.14
+* **9 Nuevos Temas Inspirados**: Se integraron 9 temas inspirados en los mejores diseños de Oh My Posh adaptados a nuestro estilo (`catppuccin`, `cobalt2`, `night-owl`, `nord`, `agnoster`, `material`, `spaceship`, `powerlevel10k`, `paradox`).
+
 ### v0.0.13
 * **Personalización Total de ASCII**: Nuevo ajuste en VS Code para cambiar dinámicamente el color del arte ASCII, y se añadió enlace al generador de letras en la documentación.
 
