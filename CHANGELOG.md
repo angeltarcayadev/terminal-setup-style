@@ -4,6 +4,11 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.1.4]
+- 🖼️ **Galería Completamente Restaurada**: Conversión nativa a imágenes PNG premium para garantizar renderizado perfecto y evitar los baneos de SVG en VS Code Marketplace.
+- 🚀 **Optimización de Rendimiento**: Mejora en los metadatos de activación (`activationEvents`) para iniciar solo cuando sea necesario.
+- 🐛 **Corrección de Freeze**: Supresión del uso de `freeze` debido a crash críticos de memoria en la máquina huésped; se generaron por vías de renderizado directo (`PyMuPDF`).
+
 ## [0.1.3]
 - 💎 **Diseños Premium Dinámicos**: ¡Rediseño visual masivo! Ahora los temas no solo cambian de color, sino que incluyen **múltiples estructuras arquitectónicas** (bordes redondeados, estilo powerline, diamantes, minimalista y rectos).
 - ☁️ **Sincronización en la Nube**: Para garantizar la máxima calidad de los diseños y que obtengas siempre la versión más moderna y perfecta, la arquitectura de los temas ahora se descarga dinámicamente en tiempo real al aplicar tu selección.
