@@ -5,7 +5,16 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
-## [0.1.11] - Reciente
+## [0.1.12] - Reciente
+### Añadido
+- 8 nuevos temas personalizados (`custom_pastel`, `custom_palette`, `custom_minimal`, `custom_powerline`, `custom_split`, `custom_neon`, `custom_aqua`, `custom_dev`).
+- Sección de "Novedades de Desarrollo" en la documentación.
+
+### Modificado
+- Refactorización a arquitectura de temas dinámicos (los temas ahora se leen localmente desde la carpeta `themes/`).
+- Reescritura total de la documentación principal a español, corrigiendo problemas de codificación UTF-8.
+
+## [0.1.11] - Anterior
 ### Añadido
 - Nueva arquitectura modular de Temas (Themes) locales directamente desde la carpeta 	hemes/.
 - 8 nuevos temas personalizados (custom_pastel, custom_palette, custom_minimal, custom_powerline, custom_split, custom_neon, custom_aqua, custom_dev).
