@@ -155,34 +155,22 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 ## 🛠️ Notas de Versión
 
 ### v0.1.11
-* **Mega Expansión de Temas (19 Diseños)**: Se ha integrado una galería completa con **19 temas dinámicos premium**, incluyendo diseños oficiales (`catppuccin`, `dracula`, `nord`, etc.) y configuraciones personalizadas (`cyberpunk`, `tokyo`, `hacker`).
+* **Mega Expansión de Temas (19 Diseños)**: Integración de una galería visual completa con **19 temas dinámicos premium**, que abarcan diseños oficiales (`catppuccin`, `dracula`, `nord`, etc.) y configuraciones altamente personalizadas.
 * **Galería Visual Optimizada**: Nueva tabla de visualización de dos columnas con capturas reales ultra-nítidas para que elijas tu estilo favorito sin sorpresas.
-* **Separación Inteligente de Assets**: Organización optimizada de los recursos visuales en directorios de imágenes (`img/`) y vectores (`svg/`).
+* **Rendimiento Mejorado**: Ajuste fino en la activación interna para un arranque más rápido del motor de configuración al abrir la terminal.
 
 ### v0.1.3
-* **Diseños Premium Dinámicos**: Los temas ahora descargan sus estructuras arquitectónicas desde la nube.
-* **Mejora del Instalador**: El script de PowerShell se integra completamente con los diseños.
+* **Diseños Premium Dinámicos**: Los temas ahora descargan sus estructuras arquitectónicas avanzadas desde la nube, garantizando siempre la versión más moderna.
+* **Mejora del Instalador**: El motor de PowerShell se ha integrado perfectamente para inyectar estos diseños sin romper el arte ASCII del perfil.
 
 ### v0.1.2
-* **Arte ASCII Dinámico**: Creación del generador ASCII al instante desde TS.
-
-### v0.1.1 & v0.1.0
-* **Automatización y Fix de Build**: Generación automática de vistas e historial.
-
-### v0.0.17
-* **Corrección de Visualización**: Se revirtió la ventana de terminal HTML por la Galería Markdown, ya que GitHub limpia el código CSS complejo por seguridad.
-
-### v0.0.16
-* **Ventana de Terminal Simulada**: Se incorporó (brevemente) una ventana de terminal simulada en HTML, aunque fue revertida por problemas de compatibilidad con GitHub.
-
-### v0.0.15
-* **Galería Visual de Temas**: Se agregó una simulación visual y galería de los 19 temas disponibles directamente en el `README.md` principal.
+* **Arte ASCII Dinámico**: Integración nativa para generar texto ASCII gigante. Ahora se puede personalizar el banner del perfil al instante desde la configuración de VS Code.
 
 ### v0.0.14
-* **9 Nuevos Temas Inspirados**: Se integraron 9 temas nuevos (`catppuccin`, `cobalt2`, `night-owl`, `nord`, `agnoster`, `material`, `spaceship`, `powerlevel10k`, `paradox`).
+* **Nuevos Temas Inspirados**: Base consolidada de temas, allanando el camino para la galería completa de la extensión.
 
 ### v0.0.13
-* **Personalización Total de ASCII**: Nuevo ajuste en VS Code para cambiar dinámicamente el color del arte ASCII, y se añadió enlace al generador de letras en la documentación.
+* **Personalización Total de ASCII**: Nuevo ajuste global en VS Code para cambiar dinámicamente el color del arte ASCII de bienvenida.
 
 ### v0.0.12
 * **Documentación Histórica**: Reconstrucción y sincronización completa del historial de versiones desde el inicio del proyecto.
