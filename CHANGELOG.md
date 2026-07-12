@@ -5,7 +5,11 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
-## [0.1.15] - Reciente
+## [0.1.16] - Reciente
+### Añadido
+- Primera prueba de extremo a extremo de la nueva automatización completa de lanzamientos (Release Skill) utilizando la CLI de GitHub.
+
+## [0.1.15] - Anterior
 ### Correcciones
 - La insignia de versión en el README ahora apunta dinámicamente al archivo `package.json` para reflejar la versión correcta.
 
