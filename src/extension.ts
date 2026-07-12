@@ -13,9 +13,30 @@ export function activate(context: vscode.ExtensionContext) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
-            const tema = config.get<string>('tema') || 'angel-default';
+            let tema = config.get<string>('tema') || 'angel-default';
 
-            vscode.window.showInformationMessage('🚀 Iniciando instalación de la Terminal de Angel-T Dev...');
+            // 1.1 Mostrar un menú (QuickPick) para que el usuario elija su tema favorito
+            const temasDisponibles = [
+                'angel-default', 'angel-cyberpunk', 'angel-dracula', 'angel-hacker', 
+                'angel-tokyo', 'angel-monokai', 'angel-ocean', 'angel-synthwave', 
+                'angel-gruvbox', 'angel-minimal'
+            ];
+
+            const seleccion = await vscode.window.showQuickPick(temasDisponibles, {
+                placeHolder: '🎨 Selecciona tu tema favorito para instalar (o presiona Esc para cancelar)',
+                title: 'Menú de Temas - Angel-T Dev'
+            });
+
+            // Si el usuario cancela (presiona Esc), salimos del comando
+            if (!seleccion) {
+                return;
+            }
+
+            // Si seleccionó uno, actualizamos la variable tema y la configuración guardada
+            tema = seleccion;
+            await config.update('tema', tema, vscode.ConfigurationTarget.Global);
+
+            vscode.window.showInformationMessage(`🚀 Iniciando instalación del tema ${tema}...`);
 
             // Aplicar automáticamente la fuente elegida en settings.json
             const terminalConfig = vscode.workspace.getConfiguration();
