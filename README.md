@@ -8,64 +8,69 @@
 
 ---
 
+## 💎 Diseños Premium Dinámicos en la Nube
+Para garantizar la máxima calidad en los diseños, los temas incluyen **múltiples estructuras arquitectónicas** (bordes redondeados, estilo powerline, diamantes, minimalista y rectos). Además, el motor de la extensión se conecta a la **nube** para descargar dinámicamente y en tiempo real las versiones más modernas y perfectas de cada estructura arquitectónica. Esto asegura que siempre tengas un estilo impecable, de alto rendimiento y actualizado.
+
+---
+
 <h3>🎨 Galería de Temas</h3>
 
 <div align="center">
-  <b>angel-default</b><br>
+  <b>jandedobbeleer</b><br>
   <img src="./assets/default.png" width="800"><br><br>
   
-  <b>angel-cyberpunk</b><br>
+  <b>cyberpunk</b><br>
   <img src="./assets/cyberpunk.png" width="800"><br><br>
 
-  <b>angel-dracula</b><br>
+  <b>dracula</b><br>
   <img src="./assets/dracula.png" width="800"><br><br>
 
-  <b>angel-hacker</b><br>
+  <b>hacker</b><br>
   <img src="./assets/hacker.png" width="800"><br><br>
 
-  <b>angel-tokyo</b><br>
+  <b>tokyonight_storm</b><br>
   <img src="./assets/tokyo.png" width="800"><br><br>
 
-  <b>angel-monokai</b><br>
+  <b>monokai</b><br>
   <img src="./assets/monokai.png" width="800"><br><br>
 
-  <b>angel-ocean</b><br>
+  <b>blue-owl</b><br>
   <img src="./assets/ocean.png" width="800"><br><br>
 
-  <b>angel-synthwave</b><br>
+  <b>synthwave</b><br>
   <img src="./assets/synthwave.png" width="800"><br><br>
 
-  <b>angel-gruvbox</b><br>
+  <b>gruvbox</b><br>
   <img src="./assets/gruvbox.png" width="800"><br><br>
 
-  <b>angel-minimal</b><br>
+  <b>minimal</b><br>
   <img src="./assets/minimal.png" width="800"><br><br>
 
-  <b>angel-catppuccin</b><br>
+  <b>catppuccin_mocha</b><br>
   <img src="./assets/catppuccin.png" width="800"><br><br>
 
-  <b>angel-cobalt2</b><br>
+  <b>cobalt2</b><br>
   <img src="./assets/cobalt2.png" width="800"><br><br>
 
-  <b>angel-night-owl</b><br>
+  <b>night-owl</b><br>
   <img src="./assets/night-owl.png" width="800"><br><br>
 
-  <b>angel-nord</b><br>
+  <b>nord</b><br>
   <img src="./assets/nord.png" width="800"><br><br>
 
-  <b>angel-agnoster</b><br>
+  <b>agnoster</b><br>
   <img src="./assets/agnoster.png" width="800"><br><br>
 
-  <b>angel-material</b><br>
+  <b>material</b><br>
   <img src="./assets/material.png" width="800"><br><br>
 
-  <b>angel-spaceship</b><br>
+  <b>spaceship</b><br>
   <img src="./assets/spaceship.png" width="800"><br><br>
 
-  <b>angel-powerlevel10k</b><br>
+  <b>powerlevel10k_rainbow</b><br>
   <img src="./assets/powerlevel10k.png" width="800"><br><br>
 
-  <b>angel-paradox</b><br>
+  <b>paradox</b><br>
   <img src="./assets/paradox.png" width="800"><br><br>
 </div>
 
