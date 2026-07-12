@@ -2,7 +2,7 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "publisher": "angel-t-dev",
   "license": "MIT",
   "repository": {
@@ -88,7 +88,12 @@
             "Yellow",
             "White"
           ],
-          "description": "Color del arte ASCII. Selecciona 'auto' para sincronizar con el tema."
+          "description": "El color del nombre gigante (ASCII) o 'auto' para usar el del tema."
+        },
+        "terminalSetup.asciiName": {
+          "type": "string",
+          "default": "Angel-T Dev",
+          "description": "Texto que aparecerá en arte ASCII gigante (vacío = no mostrar)."
         }
       }
     }
@@ -102,17 +107,21 @@
     "test": "vscode-test"
   },
   "devDependencies": {
-    "@types/vscode": "^1.125.0",
+    "@types/figlet": "^1.7.0",
     "@types/mocha": "^10.0.10",
     "@types/node": "24.x",
-    "typescript-eslint": "^8.61.1",
+    "@types/vscode": "^1.125.0",
+    "@vscode/test-cli": "^0.0.15",
+    "@vscode/test-electron": "^3.0.0",
     "eslint": "^10.5.0",
     "typescript": "^6.0.3",
-    "@vscode/test-cli": "^0.0.15",
-    "@vscode/test-electron": "^3.0.0"
+    "typescript-eslint": "^8.61.1"
   },
   "overrides": {
     "diff": "^8.0.4",
     "serialize-javascript": "^7.0.6"
+  },
+  "dependencies": {
+    "figlet": "^1.7.0"
   }
 }

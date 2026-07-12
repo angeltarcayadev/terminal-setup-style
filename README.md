@@ -8,29 +8,66 @@
 
 ---
 
-## 🎨 Galería de Temas
+<h3>🎨 Galería de Temas</h3>
 
-| Tema | Color Principal | Color Secundario | Vista Previa del Prompt (Estructura) |
-|---|:---:|:---:|---|
-| **angel-default** | ![#FF2A2A](https://img.shields.io/badge/-%23FF2A2A-FF2A2A) | ![#990000](https://img.shields.io/badge/-%23990000-990000) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-cyberpunk** | ![#00FF9C](https://img.shields.io/badge/-%2300FF9C-00FF9C) | ![#008F56](https://img.shields.io/badge/-%23008F56-008F56) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-dracula** | ![#FF79C6](https://img.shields.io/badge/-%23FF79C6-FF79C6) | ![#BD93F9](https://img.shields.io/badge/-%23BD93F9-BD93F9) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-hacker** | ![#00FF00](https://img.shields.io/badge/-%2300FF00-00FF00) | ![#008000](https://img.shields.io/badge/-%23008000-008000) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-tokyo** | ![#7AA2F7](https://img.shields.io/badge/-%237AA2F7-7AA2F7) | ![#9ECE6A](https://img.shields.io/badge/-%239ECE6A-9ECE6A) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-monokai** | ![#FD971F](https://img.shields.io/badge/-%23FD971F-FD971F) | ![#F92672](https://img.shields.io/badge/-%23F92672-F92672) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-ocean** | ![#00A8CC](https://img.shields.io/badge/-%2300A8CC-00A8CC) | ![#142850](https://img.shields.io/badge/-%23142850-142850) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-synthwave** | ![#FF007F](https://img.shields.io/badge/-%23FF007F-FF007F) | ![#3A0CA3](https://img.shields.io/badge/-%233A0CA3-3A0CA3) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-gruvbox** | ![#FE8019](https://img.shields.io/badge/-%23FE8019-FE8019) | ![#D3869B](https://img.shields.io/badge/-%23D3869B-D3869B) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-minimal** | ![#D4D4D4](https://img.shields.io/badge/-%23D4D4D4-D4D4D4) | ![#808080](https://img.shields.io/badge/-%23808080-808080) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-catppuccin**| ![#CBA6F7](https://img.shields.io/badge/-%23CBA6F7-CBA6F7) | ![#89B4FA](https://img.shields.io/badge/-%2389B4FA-89B4FA) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-cobalt2** | ![#FFC600](https://img.shields.io/badge/-%23FFC600-FFC600) | ![#0088FF](https://img.shields.io/badge/-%230088FF-0088FF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-night-owl** | ![#82AAFF](https://img.shields.io/badge/-%2382AAFF-82AAFF) | ![#C792EA](https://img.shields.io/badge/-%23C792EA-C792EA) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-nord** | ![#88C0D0](https://img.shields.io/badge/-%2388C0D0-88C0D0) | ![#5E81AC](https://img.shields.io/badge/-%235E81AC-5E81AC) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-agnoster** | ![#000000](https://img.shields.io/badge/-%23000000-000000) | ![#005FD7](https://img.shields.io/badge/-%23005FD7-005FD7) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-material** | ![#00BCD4](https://img.shields.io/badge/-%2300BCD4-00BCD4) | ![#FF9800](https://img.shields.io/badge/-%23FF9800-FF9800) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-spaceship** | ![#D33682](https://img.shields.io/badge/-%23D33682-D33682) | ![#268BD2](https://img.shields.io/badge/-%23268BD2-268BD2) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-powerlevel10k**| ![#FFD700](https://img.shields.io/badge/-%23FFD700-FFD700) | ![#005FFF](https://img.shields.io/badge/-%23005FFF-005FFF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
-| **angel-paradox** | ![#00FF00](https://img.shields.io/badge/-%2300FF00-00FF00) | ![#FF00FF](https://img.shields.io/badge/-%23FF00FF-FF00FF) | `╭─  Angel-T   ~/Code   main `<br>`╰─  v18.0   14:30 ` |
+<div align="center">
+  <b>angel-default</b><br>
+  <img src="./assets/default.png" width="400"><br><br>
+  
+  <b>angel-cyberpunk</b><br>
+  <img src="./assets/cyberpunk.png" width="400"><br><br>
+
+  <b>angel-dracula</b><br>
+  <img src="./assets/dracula.png" width="400"><br><br>
+
+  <b>angel-hacker</b><br>
+  <img src="./assets/hacker.png" width="400"><br><br>
+
+  <b>angel-tokyo</b><br>
+  <img src="./assets/tokyo.png" width="400"><br><br>
+
+  <b>angel-monokai</b><br>
+  <img src="./assets/monokai.png" width="400"><br><br>
+
+  <b>angel-ocean</b><br>
+  <img src="./assets/ocean.png" width="400"><br><br>
+
+  <b>angel-synthwave</b><br>
+  <img src="./assets/synthwave.png" width="400"><br><br>
+
+  <b>angel-gruvbox</b><br>
+  <img src="./assets/gruvbox.png" width="400"><br><br>
+
+  <b>angel-minimal</b><br>
+  <img src="./assets/minimal.png" width="400"><br><br>
+
+  <b>angel-catppuccin</b><br>
+  <img src="./assets/catppuccin.png" width="400"><br><br>
+
+  <b>angel-cobalt2</b><br>
+  <img src="./assets/cobalt2.png" width="400"><br><br>
+
+  <b>angel-night-owl</b><br>
+  <img src="./assets/night-owl.png" width="400"><br><br>
+
+  <b>angel-nord</b><br>
+  <img src="./assets/nord.png" width="400"><br><br>
+
+  <b>angel-agnoster</b><br>
+  <img src="./assets/agnoster.png" width="400"><br><br>
+
+  <b>angel-material</b><br>
+  <img src="./assets/material.png" width="400"><br><br>
+
+  <b>angel-spaceship</b><br>
+  <img src="./assets/spaceship.png" width="400"><br><br>
+
+  <b>angel-powerlevel10k</b><br>
+  <img src="./assets/powerlevel10k.png" width="400"><br><br>
+
+  <b>angel-paradox</b><br>
+  <img src="./assets/paradox.png" width="400"><br><br>
+</div>
 
 ---
 

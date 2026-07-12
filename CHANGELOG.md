@@ -4,6 +4,16 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
+## [0.1.2]
+- ✨ **Arte ASCII Dinámico**: Integración del paquete `figlet` para generar texto ASCII gigante nativamente en TypeScript. Ahora se puede cambiar el banner del perfil al instante desde la configuración de VS Code.
+- 🖼️ **Nueva Galería de Temas (PNG)**: Rediseño completo de la tabla del README.md, ahora es una cuadrícula centrada con imágenes reales `.png` para asegurar compatibilidad total con la publicación en Marketplace de VS Code.
+
+## [0.1.1]
+- 🐛 **Corrección de Build**: Reversión temporal y solución a bloqueos de `vsce` generados por el uso de imágenes `.svg` en la documentación.
+
+## [0.1.0]
+- 🏆 **Automatización de Screenshots**: Implementación de scripts avanzados (Python/PowerShell) para generar vistas previas de los 19 temas sin romper los flujos de memoria en Windows.
+
 ## [0.0.17]
 - 🐛 **Corrección de Visualización**: Se revirtió el diseño HTML de la terminal a Markdown puro (Tabla de Colores), ya que GitHub limpia los estilos CSS por seguridad, lo cual rompía la visualización.
 

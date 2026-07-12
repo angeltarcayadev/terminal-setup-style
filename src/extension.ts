@@ -3,7 +3,7 @@ import * as fs from 'fs';
 import * as path from 'path';
 import * as os from 'os';
 import * as https from 'https';
-
+import * as figlet from 'figlet';
 export function activate(context: vscode.ExtensionContext) {
     console.log('¡La extensión "Terminal Setup Style" está activa!');
 
@@ -87,6 +87,8 @@ export function activate(context: vscode.ExtensionContext) {
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
             const tema = config.get<string>('tema') || 'angel-default';
+            const asciiName = config.get<string>('asciiName') || 'Angel-T Dev';
+            const colorAscii = config.get<string>('colorAscii') || 'auto';
 
             // Si cambió la fuente, actualizar la configuración del terminal en VS Code
             if (event.affectsConfiguration('terminalSetup.fuente')) {
@@ -98,9 +100,15 @@ export function activate(context: vscode.ExtensionContext) {
                 );
             }
 
-            // Si cambió el tema o el nombre, actualizar el archivo JSON local del tema instantáneamente
-            if (event.affectsConfiguration('terminalSetup.tema') || event.affectsConfiguration('terminalSetup.nombre')) {
+            // Si cambió el tema, el nombre, el nombre ASCII o su color, actualizar todo localmente
+            if (
+                event.affectsConfiguration('terminalSetup.tema') || 
+                event.affectsConfiguration('terminalSetup.nombre') ||
+                event.affectsConfiguration('terminalSetup.asciiName') ||
+                event.affectsConfiguration('terminalSetup.colorAscii')
+            ) {
                 await updateLocalThemeFile(nombre, tema);
+                await updateLocalProfile(asciiName, colorAscii, tema);
             }
         }
     });
@@ -239,5 +247,86 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
     } catch (err: any) {
         console.error('[TerminalSetup] Error actualizando el archivo local de tema:', err);
         vscode.window.showErrorMessage(`❌ Error al configurar el tema automáticamente: ${err.message || err}`);
+    }
+}
+
+// Función para actualizar el perfil de PowerShell y el arte ASCII
+async function updateLocalProfile(asciiName: string, asciiColor: string, tema: string) {
+    try {
+        const homeDir = os.homedir();
+        
+        const profilePaths = [
+            path.join(homeDir, 'Documents', 'PowerShell', 'Microsoft.PowerShell_profile.ps1'),
+            path.join(homeDir, 'Documents', 'WindowsPowerShell', 'Microsoft.PowerShell_profile.ps1'),
+            path.join(homeDir, 'OneDrive', 'Documents', 'PowerShell', 'Microsoft.PowerShell_profile.ps1'),
+            path.join(homeDir, 'OneDrive', 'Documents', 'WindowsPowerShell', 'Microsoft.PowerShell_profile.ps1')
+        ];
+
+        let finalColor = asciiColor;
+        if (asciiColor === 'auto') {
+            switch (tema) {
+                case "angel-cyberpunk": finalColor = "Cyan"; break;
+                case "angel-dracula": finalColor = "Magenta"; break;
+                case "angel-hacker": finalColor = "Green"; break;
+                case "angel-tokyo": finalColor = "Blue"; break;
+                case "angel-monokai": finalColor = "Yellow"; break;
+                case "angel-ocean": finalColor = "Cyan"; break;
+                case "angel-synthwave": finalColor = "Magenta"; break;
+                case "angel-gruvbox": finalColor = "Yellow"; break;
+                case "angel-minimal": finalColor = "White"; break;
+                case "angel-catppuccin": finalColor = "Magenta"; break;
+                case "angel-cobalt2": finalColor = "Yellow"; break;
+                case "angel-night-owl": finalColor = "Blue"; break;
+                case "angel-nord": finalColor = "Cyan"; break;
+                case "angel-agnoster": finalColor = "Blue"; break;
+                case "angel-material": finalColor = "Cyan"; break;
+                case "angel-spaceship": finalColor = "Magenta"; break;
+                case "angel-powerlevel10k": finalColor = "Yellow"; break;
+                case "angel-paradox": finalColor = "Green"; break;
+                default: finalColor = "Red"; break;
+            }
+        }
+
+        let asciiArt = "";
+        if (asciiName && asciiName.trim() !== "") {
+            try {
+                // figlet genera el arte ASCII. Usamos la fuente ANSI Shadow que era la original.
+                asciiArt = figlet.textSync(asciiName, { font: 'ANSI Shadow' });
+            } catch (e) {
+                console.error("Error generando figlet", e);
+                // Si falla por falta de fuentes, usa un texto normal como fallback
+                asciiArt = asciiName;
+            }
+        }
+
+        // Preparar el string escapando comillas para PowerShell
+        const arteSafe = asciiArt.replace(/"/g, '\`"');
+
+        const profileCode = `Invoke-Expression (@(& 'oh-my-posh' init pwsh --config '~\\Documents\\PowerShell\\custom-theme.omp.json') -join "\\n")
+Import-Module Terminal-Icons
+
+$global:OmpPrompt = $function:prompt
+$global:FirstTerminalRun = $true
+
+function prompt {
+    if ($global:FirstTerminalRun) {
+        Clear-Host
+        Write-Host " "
+        Write-Host "${arteSafe}" -ForegroundColor ${finalColor}
+        Write-Host " "
+        $global:FirstTerminalRun = $false
+    }
+    & $global:OmpPrompt
+}
+`;
+
+        // Escribir en todos los perfiles de PowerShell existentes
+        for (const p of profilePaths) {
+            if (fs.existsSync(p)) {
+                fs.writeFileSync(p, profileCode, 'utf8');
+            }
+        }
+    } catch (err: any) {
+        console.error('[TerminalSetup] Error actualizando el perfil ASCII:', err);
     }
 }
