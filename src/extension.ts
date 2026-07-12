@@ -75,28 +75,7 @@ export function activate(context: vscode.ExtensionContext) {
 
 export function deactivate() {}
 
-// Función auxiliar para descargar los temas desde GitHub de forma segura y liviana
-function fetchThemeJson(url: string): Promise<string> {
-    return new Promise((resolve, reject) => {
-        https.get(url, (res) => {
-            let data = '';
-            res.on('data', (chunk) => {
-                data += chunk;
-            });
-            res.on('end', () => {
-                if (res.statusCode === 200) {
-                    resolve(data);
-                } else {
-                    reject(new Error(`Error status code: ${res.statusCode}`));
-                }
-            });
-        }).on('error', (err) => {
-            reject(err);
-        });
-    });
-}
-
-// Función principal de actualización instantánea de configuración local
+// Función principal de actualización instantánea de configuración local (Generación Dinámica)
 async function updateLocalThemeFile(nombre: string, tema: string) {
     try {
         const homeDir = os.homedir();
@@ -109,29 +88,102 @@ async function updateLocalThemeFile(nombre: string, tema: string) {
             path.join(homeDir, 'OneDrive', 'Documents', 'WindowsPowerShell')
         ];
 
-        // 1. Leer el archivo del tema (primero local para pruebas, luego GitHub como fallback)
-        const localThemeDir = 'c:/Users/angel/Desktop/Terminal-Setup-1/Themes';
-        const localThemePath = path.join(localThemeDir, `${tema}.omp.json`);
-        
-        let themeJson = '';
-        if (fs.existsSync(localThemePath)) {
-            themeJson = fs.readFileSync(localThemePath, 'utf8');
-            console.log(`[TerminalSetup] Cargado tema local de: ${localThemePath}`);
-        } else {
-            const themeUrl = `https://raw.githubusercontent.com/angeltarcayadev/Terminal-Setup/main/Themes/${tema}.omp.json`;
-            themeJson = await fetchThemeJson(themeUrl);
-            console.log(`[TerminalSetup] Descargado tema de GitHub: ${themeUrl}`);
+        let colorPrincipal = "#FF2A2A";
+        let colorSecundario = "#990000";
+
+        switch (tema) {
+            case "angel-cyberpunk": colorPrincipal = "#00FF9C"; colorSecundario = "#008F56"; break;
+            case "angel-dracula": colorPrincipal = "#FF79C6"; colorSecundario = "#BD93F9"; break;
+            case "angel-hacker": colorPrincipal = "#00FF00"; colorSecundario = "#008000"; break;
+            case "angel-tokyo": colorPrincipal = "#7AA2F7"; colorSecundario = "#9ECE6A"; break;
+            case "angel-monokai": colorPrincipal = "#FD971F"; colorSecundario = "#F92672"; break;
+            case "angel-ocean": colorPrincipal = "#00A8CC"; colorSecundario = "#142850"; break;
+            case "angel-synthwave": colorPrincipal = "#FF007F"; colorSecundario = "#3A0CA3"; break;
+            case "angel-gruvbox": colorPrincipal = "#FE8019"; colorSecundario = "#D3869B"; break;
+            case "angel-minimal": colorPrincipal = "#D4D4D4"; colorSecundario = "#808080"; break;
+            default: colorPrincipal = "#FF2A2A"; colorSecundario = "#990000"; break;
         }
 
-        // 2. Personalizar el JSON del tema inyectando el nombre del usuario
-        const updatedJson = themeJson.replace(/Angel-T Dev/g, nombre);
+        const themeJsonTemplate = `{
+  "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
+  "blocks": [
+    {
+      "alignment": "left",
+      "segments": [
+        {
+          "background": "${colorPrincipal}",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\\ue0b6",
+          "style": "diamond",
+          "template": " \\uf415 ${nombre} ",
+          "trailing_diamond": "\\ue0c6",
+          "type": "session"
+        },
+        {
+          "background": "${colorSecundario}",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\\ue0c7",
+          "options": { "style": "folder" },
+          "style": "diamond",
+          "template": " \\uf07b {{ .Path }} ",
+          "trailing_diamond": "\\ue0c6",
+          "type": "path"
+        },
+        {
+          "background": "#424242",
+          "foreground": "${colorPrincipal}",
+          "leading_diamond": "\\ue0c7",
+          "options": { "branch_icon": "" },
+          "style": "diamond",
+          "template": " \\uf126 {{ .HEAD }} ",
+          "trailing_diamond": "\\ue0c6",
+          "type": "git"
+        },
+        {
+          "background": "#2E2E2E",
+          "foreground": "#E4F34A",
+          "leading_diamond": "\\ue0c7",
+          "options": { "fetch_version": false },
+          "style": "diamond",
+          "template": " \\ue235 {{ if .Error }}{{ .Error }}{{ else }}{{ if .Venv }}{{ .Venv }} {{ end }}{{ .Full }}{{ end }} ",
+          "trailing_diamond": "\\ue0c6",
+          "type": "python"
+        },
+        {
+          "background": "#2E2E2E",
+          "foreground": "#42E66C",
+          "leading_diamond": "\\ue0c7",
+          "options": { "fetch_version": false },
+          "style": "diamond",
+          "template": " \\ue718 {{ if .PackageManagerIcon }}{{ .PackageManagerIcon }} {{ end }}{{ .Full }} ",
+          "trailing_diamond": "\\ue0c6",
+          "type": "node"
+        },
+        {
+          "background": "#1A1A1A",
+          "foreground": "#FFFFFF",
+          "leading_diamond": "\\ue0c7",
+          "options": { "time_format": "15:04" },
+          "style": "diamond",
+          "template": " \\uf017 {{ .CurrentDate | date .Format }} ",
+          "trailing_diamond": "\\ue0b4",
+          "type": "time"
+        }
+      ],
+      "type": "prompt"
+    }
+  ],
+  "final_space": true,
+  "version": 4
+}`;
 
         // 3. Escribir en todos los perfiles de PowerShell existentes
         let updatedCount = 0;
         for (const p of paths) {
             if (fs.existsSync(p)) {
-                const themeFile = path.join(p, 'theme.omp.json');
-                fs.writeFileSync(themeFile, updatedJson, 'utf8');
+                // Usando custom-theme.omp.json para coincidir con el nuevo install.ps1
+                const themeFile = path.join(p, 'custom-theme.omp.json');
+                fs.writeFileSync(themeFile, themeJsonTemplate, 'utf8');
                 updatedCount++;
             }
         }
