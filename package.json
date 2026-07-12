@@ -35,7 +35,7 @@
         },
         "terminalSetup.fuente": {
           "type": "string",
-          "default": "CaskaydiaCove Nerd Font",
+          "default": "FiraCode Nerd Font Mono",
           "description": "Nombre de la fuente (debe estar instalada)."
         },
         "terminalSetup.tema": {

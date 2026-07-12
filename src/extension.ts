@@ -12,7 +12,7 @@ export function activate(context: vscode.ExtensionContext) {
         try {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
-            const fuente = config.get<string>('fuente') || 'CaskaydiaCove Nerd Font';
+            const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
             const tema = config.get<string>('tema') || 'angel-default';
 
             vscode.window.showInformationMessage('🚀 Iniciando instalación de la Terminal de Angel-T Dev...');
@@ -49,7 +49,7 @@ export function activate(context: vscode.ExtensionContext) {
         if (event.affectsConfiguration('terminalSetup')) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
-            const fuente = config.get<string>('fuente') || 'CaskaydiaCove Nerd Font';
+            const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
             const tema = config.get<string>('tema') || 'angel-default';
 
             // Si cambió la fuente, actualizar la configuración del terminal en VS Code
