@@ -8,7 +8,7 @@
 
 <p align="center">
   <a href="https://github.com/angeltarcayadev/terminal-setup-style/blob/main/LICENSE"><img src="https://img.shields.io/github/license/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/angeltarcayadev/terminal-setup-style/blob/main/package.json"><img src="https://img.shields.io/github/package-json/v/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="Version"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style/releases"><img src="https://img.shields.io/github/v/release/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="Build Status"></a>
   <a href="https://ohmyposh.dev/"><img src="https://img.shields.io/badge/Documentation-ohmyposh.dev-blue?style=for-the-badge" alt="Documentation"></a>
   <a href="https://github.com/angeltarcayadev/terminal-setup-style"><img src="https://img.shields.io/github/downloads/angeltarcayadev/terminal-setup-style/total?color=blue&style=for-the-badge" alt="Downloads"></a>
 </p>
