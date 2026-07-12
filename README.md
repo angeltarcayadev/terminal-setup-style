@@ -1,13 +1,9 @@
-# Terminal Setup de Angel-T Dev
-
-<img width="946" height="233" alt="image" src="https://github.com/user-attachments/assets/c4c0e6f8-df9d-4f5a-be8e-25699a2ab0fd" />
-
 # Terminal Setup Style by Angel-T Dev 🚀
 
 ¡Transforma la aburrida terminal por defecto de Visual Studio Code en una herramienta profesional, colorida y con iconos increíbles con un solo comando!
 
 <div align="center">
-  <img src="preview.png" alt="Vista previa de la terminal de Angel-T Dev" width="800">
+  <img src="https://github.com/user-attachments/assets/c4c0e6f8-df9d-4f5a-be8e-25699a2ab0fd" alt="Vista previa de la terminal de Angel-T Dev" width="800">
 </div>
 
 ---
