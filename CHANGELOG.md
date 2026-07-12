@@ -4,7 +4,10 @@ All notable changes to the "terminal-setup-style" extension will be documented i
 
 Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
 
-## [0.0.9]
+## [0.0.11]
+- 🤖 **Sistema de Lanzamientos con IA**: Integración de una habilidad inteligente que automatiza la creación de notas de versión y sincroniza los archivos `.md`.
+
+## [0.0.10]
 - ⚡ **Auto-Arranque Inteligente**: El menú interactivo de temas se ejecuta automáticamente la primera vez que instalas la extensión.
 
 ## [0.0.7]
