@@ -39,9 +39,9 @@
         },
         "terminalSetup.tema": {
           "type": "string",
-          "default": "jandedobbeleer",
+          "default": "oficial_premium",
           "enum": [
-            "jandedobbeleer",
+            "oficial_premium",
             "cyberpunk",
             "dracula",
             "hacker",
@@ -122,3 +122,4 @@
     "figlet": "^1.7.0"
   }
 }
+

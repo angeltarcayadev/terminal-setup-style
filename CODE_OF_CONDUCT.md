@@ -1,49 +1,33 @@
-# Contributor Covenant Code of Conduct
+﻿# Código de Conducta para Colaboradores
 
-## Our Pledge
+## Nuestro Compromiso
 
-We as members, contributors, and leaders pledge to make participation in our
-community a harassment-free experience for everyone, regardless of age, body
-size, visible or invisible disability, ethnicity, sex characteristics, gender
-identity and expression, level of experience, education, socio-economic status,
-nationality, personal appearance, race, religion, or sexual identity
-and orientation.
+Nosotros, como miembros, colaboradores y líderes, nos comprometemos a hacer de la participación en nuestra comunidad una experiencia libre de acoso para todos, independientemente de la edad, tamaño corporal, discapacidad visible o invisible, etnia, características sexuales, identidad y expresión de género, nivel de experiencia, educación, estatus socioeconómico, nacionalidad, apariencia personal, raza, religión o identidad y orientación sexual.
 
-We pledge to act and interact in ways that contribute to an open, welcoming,
-diverse, inclusive, and healthy community.
+Nos comprometemos a actuar e interactuar de maneras que contribuyan a una comunidad abierta, acogedora, diversa, inclusiva y saludable.
 
-## Our Standards
+## Nuestros Estándares
 
-Examples of behavior that contributes to a positive environment for our
-community include:
+Ejemplos de comportamiento que contribuyen a un entorno positivo para nuestra comunidad incluyen:
 
-* Demonstrating empathy and kindness toward other people
-* Being respectful of differing opinions, viewpoints, and experiences
-* Giving and gracefully accepting constructive feedback
-* Accepting responsibility and apologizing to those affected by our mistakes,
-  and learning from the experience
-* Focusing on what is best not just for us as individuals, but for the
-  overall community
+* Demostrar empatía y amabilidad hacia otras personas
+* Ser respetuoso con las diferentes opiniones, puntos de vista y experiencias
+* Dar y aceptar con gracia comentarios constructivos
+* Aceptar la responsabilidad y disculparse con los afectados por nuestros errores, y aprender de la experiencia
+* Centrarse en lo que es mejor no solo para nosotros como individuos, sino para la comunidad en general
 
-Examples of unacceptable behavior include:
+Ejemplos de comportamiento inaceptable incluyen:
 
-* The use of sexualized language or imagery, and sexual attention or
-  advances of any kind
-* Trolling, insulting or derogatory comments, and personal or political attacks
-* Public or private harassment
-* Publishing others' private information, such as a physical or email
-  address, without their explicit permission
-* Other conduct which could reasonably be considered inappropriate in a
-  professional setting
+* El uso de lenguaje o imágenes sexualizadas, y atención o avances sexuales de cualquier tipo
+* Troleo, comentarios insultantes o despectivos, y ataques personales o políticos
+* Acoso público o privado
+* Publicar información privada de otros, como una dirección física o de correo electrónico, sin su permiso explícito
+* Otras conductas que podrían considerarse razonablemente inapropiadas en un entorno profesional
 
-## Enforcement Responsibilities
+## Responsabilidades de Aplicación
 
-Community leaders are responsible for clarifying and enforcing our standards of
-acceptable behavior and will take appropriate and fair corrective action in
-response to any behavior that they deem inappropriate, threatening, offensive,
-or harmful.
+Los líderes de la comunidad son responsables de aclarar y hacer cumplir nuestros estándares de comportamiento aceptable y tomarán las medidas correctivas apropiadas y justas en respuesta a cualquier comportamiento que consideren inapropiado, amenazante, ofensivo o dañino.
 
-## Scope
+## Alcance
 
-This Code of Conduct applies within all community spaces, and also applies when
-an individual is officially representing the community in public spaces.
+Este Código de Conducta se aplica dentro de todos los espacios de la comunidad, y también se aplica cuando un individuo representa oficialmente a la comunidad en espacios públicos.

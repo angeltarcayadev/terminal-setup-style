@@ -1,69 +1,57 @@
-<h1 align="center">
+﻿<h1 align="center">
   Terminal Setup Style
 </h1>
 
 <p align="center">
-  <i align="center">Prompt theme engine for your VS Code terminal ??</i>
+  <i align="center">Motor de temas para tu terminal en VS Code 🚀</i>
 </p>
 
 <p align="center">
   <a href="https://github.com/angeltarcayadev/terminal-setup-style/blob/main/LICENSE"><img src="https://img.shields.io/github/license/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="License"></a>
-  <a href="https://github.com/angeltarcayadev/terminal-setup-style/actions"><img src="https://img.shields.io/github/actions/workflow/status/angeltarcayadev/terminal-setup-style/build.yml?style=for-the-badge" alt="Build Status"></a>
-  <a href="https://github.com/angeltarcayadev/terminal-setup-style/releases"><img src="https://img.shields.io/github/v/release/angeltarcayadev/terminal-setup-style?style=for-the-badge" alt="Release"></a>
-  <a href="https://github.com/angeltarcayadev/terminal-setup-style"><img src="https://img.shields.io/badge/docs-read-green?style=for-the-badge" alt="Docs"></a>
-  <a href="https://marketplace.visualstudio.com/items?itemName=Angel-TDev.terminal-setup-style"><img src="https://img.shields.io/visual-studio-marketplace/d/Angel-TDev.terminal-setup-style?style=for-the-badge" alt="Downloads"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style/releases"><img src="https://img.shields.io/github/v/release/angeltarcayadev/terminal-setup-style?color=blue&style=for-the-badge" alt="Build Status"></a>
+  <a href="https://ohmyposh.dev/"><img src="https://img.shields.io/badge/Documentation-ohmyposh.dev-blue?style=for-the-badge" alt="Documentation"></a>
+  <a href="https://github.com/angeltarcayadev/terminal-setup-style"><img src="https://img.shields.io/github/downloads/angeltarcayadev/terminal-setup-style/total?color=blue&style=for-the-badge" alt="Downloads"></a>
 </p>
 
 <p align="center">
-  <a href="https://www.gitkraken.com/"><img src="https://img.shields.io/badge/Made_with_love_using-GitKraken-179287?style=for-the-badge&logo=gitkraken&logoColor=white" alt="GitKraken"></a>
+  Este repositorio fue hecho con pasión para la comunidad de desarrolladores. 💻❤️
 </p>
 
-## ?? Sponsors
-
-<p>
-  <a href="https://coderabbit.ai/"><img src="https://img.shields.io/badge/CodeRabbit-AI-FF6B6B?style=for-the-badge" alt="CodeRabbit"></a>
+<p align="center">
+  <a href="https://github.com/sponsors/angeltarcayadev"><img src="https://img.shields.io/badge/Sponsors-CodeRabbit_J-blue?style=for-the-badge" alt="Sponsors"></a>
+  <br>
+  <i>¿Quieres convertirte en patrocinador?</i>
 </p>
 
-[Want to become a sponsor?](https://github.com/sponsors/angeltarcayadev)
+## Acerca de este Proyecto
 
-## ?? Join the community
+Lo que comenzó como un pequeño experimento, resultó en una extensión altamante personalizable para **Visual Studio Code** que inyecta temas visuales atractivos directamente en tu terminal integrada. Disfruta de indicadores visuales de Git, tiempo de ejecución, nivel de batería, entorno virtual (Python, Node, etc) y más.
 
-<p>
-  <a href="https://discord.gg/your-discord-link"><img src="https://img.shields.io/discord/1234567890?color=5865F2&label=Discord&logo=discord&logoColor=white&style=for-the-badge" alt="Discord"></a>
-  <a href="https://mastodon.social/@your-handle"><img src="https://img.shields.io/mastodon/follow/12345?domain=https%3A%2F%2Fmastodon.social&style=for-the-badge&logo=mastodon" alt="Mastodon"></a>
-</p>
+## 📦 Instalación
 
----
+1. Abre **Visual Studio Code**.
+2. Ve a la sección de **Extensiones** (Ctrl+Shift+X).
+3. Busca **Terminal Setup Style**.
+4. Haz clic en **Instalar**.
+5. *Nota:* Asegúrate de tener una fuente Nerd Font instalada en tu sistema (ej. *FiraCode Nerd Font*) y configurada en 	erminal.integrated.fontFamily para ver los iconos correctamente.
 
-What started as a simple script to customize PowerShell inside VS Code resulted in a highly customizable and extensible prompt theme engine. With **Terminal Setup Style**, you can effortlessly inject beautiful architectural designs, Nerd Fonts, and ASCII art directly into your VS Code integrated terminal.
+## 🚀 Uso y Configuración
 
-### ?? Support ??
+Después de instalar, puedes cambiar el tema directamente desde las configuraciones:
+1. Ve a **Settings (Configuraciones)** -> Busca Terminal Setup Style.
+2. Selecciona un tema de la lista desplegable. ¡Los cambios se aplicarán al instante en tus nuevas terminales!
 
-- [**Swag**](#) - Show your love with a t-shirt!
-- [**GitHub**](https://github.com/sponsors/angeltarcayadev) - One time support, or a recurring donation?
-- [**Ko-Fi**](#) - No coffee, no code.
+## 🖼️ Galería de Temas
 
----
+Aquí tienes un vistazo de los **27 increíbles temas** que puedes elegir.
 
-## ? Features
-
-- **Shell and platform agnostic**: Designed to work flawlessly in your VS Code terminal (PowerShell focus).
-- **Easily configurable**: No more complex JSON editing, pick your style directly from VS Code settings.
-- **The most configurable prompt utility**: Over 19+ premium themes ready to use, plus support for custom themes via the \	hemes/\ folder.
-- **Fast**: Installs and configures everything locally with zero latency.
-- **Dynamic ASCII Art**: Generate beautiful, colorful ASCII banners dynamically for your profile.
-
----
-
-## ?? Galer�a de Temas
-
-<table align="center" width="100%">
+<table width="100%">
   <tr>
-    <td align="center" width="50%">
-      <b>jandedobbeleer</b><br>
-      <img src="assets/img/default.png" alt="jandedobbeleer" width="100%">
+    <td align="center">
+      <b>oficial_premium</b><br>
+      <img src="assets/img/oficial_premium.png" alt="oficial_premium" width="100%">
     </td>
-    <td align="center" width="50%">
+    <td align="center">
       <b>cyberpunk</b><br>
       <img src="assets/img/cyberpunk.png" alt="cyberpunk" width="100%">
     </td>
@@ -196,29 +184,14 @@ What started as a simple script to customize PowerShell inside VS Code resulted 
   </tr>
 </table>
 
+## 🤝 Comunidad
+
+Mantente conectado y únete a la conversación con la comunidad:
+
+* [Mastodon](https://mastodon.social/)
+* [Discord](https://discord.com/)
+
 ---
-
-## ?? Instalaci�n y Uso
-
-1. Instala la extensi�n **Terminal Setup Style** desde el VS Code Marketplace.
-2. Abre la configuraci�n de VS Code presionando \Ctrl\ + \,\.
-3. Busca **\Terminal Setup Style\**.
-4. Configura tu nombre, fuente Nerd Font, y elige uno de los temas del men� desplegable.
-5. Abre la Paleta de Comandos (\Ctrl\ + \Shift\ + \P\) y ejecuta **\Angel-T Dev: Instalar Terminal Setup\**.
-
-## ?? Documentation
-
-For full setup instructions, custom themes mapping, and troubleshooting, visit the GitHub repository or the visual gallery above.
-
-## ? Reviews
-
-> "Terminal Setup Style completely changed the way I look at VS Code. A game changer."  
-> � **Repo review by Angel-T Dev Community**
-
-## ?? Thanks
-
-- **Jan De Dobbeleer** providing the first influence to start oh-my-posh.
-- **Keith Dahlby** for creating posh-git and making life more enjoyable.
-- **Robby Russell** for creating oh-my-zsh, without him this would probably not be here.
-- **Starship** for doing great things.
-
+<p align="center">
+  <i>Desarrollado y mantenido con ❤️ por <a href="https://github.com/angeltarcayadev">angeltarcayadev</a>.</i>
+</p>

@@ -23,7 +23,7 @@ export function activate(context: vscode.ExtensionContext) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
-            let tema = config.get<string>('tema') || 'jandedobbeleer';
+            let tema = config.get<string>('tema') || 'oficial_premium';
 
             // 1.1 Mostrar un menú (QuickPick) leyendo los archivos de la carpeta 'themes' localmente
             let temasDisponibles: string[] = [];
@@ -34,7 +34,7 @@ export function activate(context: vscode.ExtensionContext) {
             } catch (err) {
                 console.error("No se pudo leer la carpeta themes", err);
                 // Fallback de seguridad
-                temasDisponibles = ['jandedobbeleer', 'cyberpunk', 'dracula'];
+                temasDisponibles = ['oficial_premium', 'cyberpunk', 'dracula'];
             }
 
             const seleccion = await vscode.window.showQuickPick(temasDisponibles, {
@@ -89,7 +89,7 @@ export function activate(context: vscode.ExtensionContext) {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
             const fuente = config.get<string>('fuente') || 'FiraCode Nerd Font Mono';
-            const tema = config.get<string>('tema') || 'jandedobbeleer';
+            const tema = config.get<string>('tema') || 'oficial_premium';
             const asciiName = config.get<string>('asciiName') || 'Angel-T Dev';
             const colorAscii = config.get<string>('colorAscii') || 'auto';
 

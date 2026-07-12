@@ -3,7 +3,7 @@
 # =====================================================================
 
 $Themes = @(
-    "jandedobbeleer", "cyberpunk", "dracula", "hacker", 
+    "oficial_premium", "cyberpunk", "dracula", "hacker", 
     "tokyonight_storm", "monokai", "blue-owl", "synthwave", 
     "gruvbox", "minimal", "catppuccin_mocha", "cobalt2",
     "night-owl", "nord", "agnoster", "material",
@@ -41,7 +41,7 @@ foreach ($t in $Themes) {
     
     # Custom mappings para los nombres de los archivos PNG
     $OutName = $t
-    if ($t -eq "jandedobbeleer") { $OutName = "default" }
+    if ($t -eq "oficial_premium") { $OutName = "oficial_premium" }
     if ($t -eq "tokyonight_storm") { $OutName = "tokyo" }
     if ($t -eq "catppuccin_mocha") { $OutName = "catppuccin" }
     if ($t -eq "powerlevel10k_rainbow") { $OutName = "powerlevel10k" }
@@ -58,3 +58,4 @@ foreach ($t in $Themes) {
 
 Remove-Item "temp_theme.json" -ErrorAction SilentlyContinue
 Write-Host "[OK] Todas las capturas generadas exitosamente en la carpeta assets/" -ForegroundColor Green
+

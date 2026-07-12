@@ -1,29 +1,33 @@
-# Contributing to Terminal Setup Style
+﻿# Contribuyendo a Terminal Setup Style
 
-First off, thank you for considering contributing to Terminal Setup Style! It's people like you that make Terminal Setup Style such a great tool.
+¡Antes que nada, gracias por considerar contribuir a Terminal Setup Style! Son personas como tú las que hacen que esta herramienta sea genial.
 
-## Where do I go from here?
+## ¿Por dónde empiezo?
 
-If you've noticed a bug or have a question that doesn't belong on the Support channels, search the issue tracker to see if someone else in the community has already created a ticket. If not, go ahead and make one!
+Si notaste un error o tienes una pregunta, busca en el rastreador de problemas (issues) para ver si alguien en la comunidad ya ha creado un ticket. ¡Si no, anímate y crea uno!
 
-## Adding New Themes
+## Agregando Nuevos Temas
 
-The easiest way to contribute is by adding a new theme! 
+¡La forma más sencilla de contribuir es agregando un nuevo tema visual!
 
-1. Create your custom theme in Oh My Posh JSON format (`.omp.json`).
-2. Add your `theme_name.omp.json` file inside the `themes/` directory of this repository.
-3. Take a screenshot of your theme in action and add it to the `assets/img/` folder with the same name (`theme_name.png`).
-4. Add your theme to the visual gallery in the `README.md`.
-5. Submit a Pull Request!
+1. Crea tu tema personalizado en formato JSON (.omp.json).
+2. Agrega tu archivo 
+ombre_del_tema.omp.json dentro de la carpeta 	hemes/ de este repositorio.
+3. Toma una captura de pantalla de tu tema en acción y agrégala a la carpeta ssets/img/ con el mismo nombre (
+ombre_del_tema.png).
+4. Agrega tu tema a la galería visual en el archivo README.md.
+5. ¡Envía tu Pull Request (PR)!
 
-## Development Setup
+## Configuración de Desarrollo
 
-1. Clone the repository: `git clone https://github.com/angeltarcayadev/terminal-setup-style.git`
-2. Run `npm install` to install dependencies.
-3. Press `F5` in VS Code to run the extension in Debug Mode.
-4. Run `npm run compile` to build the TypeScript files.
+1. Clona el repositorio: git clone https://github.com/angeltarcayadev/terminal-setup-style.git
+2. Ejecuta 
+pm install para instalar las dependencias.
+3. Presiona F5 en VS Code para ejecutar la extensión en Modo Depuración (Debug Mode).
+4. Ejecuta 
+pm run compile para compilar los archivos TypeScript.
 
-## Code Style
+## Estilo de Código
 
-- Write clean, modern TypeScript.
-- Ensure there are no warnings or linting errors before submitting your PR.
+- Escribe TypeScript moderno y limpio.
+- Asegúrate de que no haya advertencias ni errores de linting antes de enviar tu PR.
