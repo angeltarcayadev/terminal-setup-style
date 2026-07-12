@@ -43,7 +43,7 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 
 ## 🛠️ Notas de Versión
 
-### v0.0.9
+### v0.0.10
 * **Auto-Arranque Inteligente**: El menú interactivo de temas se ejecuta automáticamente la primera vez que instalas la extensión, guiando al usuario de inmediato.
 
 ### v0.0.7
