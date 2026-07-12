@@ -1,11 +1,15 @@
-﻿# Registro de Cambios (Changelog)
+# Registro de Cambios (Changelog)
 
 Todos los cambios notables en este proyecto se documentarán en este archivo.
 
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
-## [0.1.12] - Reciente
+## [0.1.13] - Reciente
+### Correcciones
+- Se corrigió el error `command 'terminal-setup-style.install' not found` agregando los `activationEvents` faltantes en el `package.json`.
+
+## [0.1.12] - Anterior
 ### Añadido
 - 8 nuevos temas personalizados (`custom_pastel`, `custom_palette`, `custom_minimal`, `custom_powerline`, `custom_split`, `custom_neon`, `custom_aqua`, `custom_dev`).
 - Sección de "Novedades de Desarrollo" en la documentación.
