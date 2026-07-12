@@ -4,7 +4,7 @@
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
   "version": "0.0.1",
   "publisher": "angel-t-dev",
-  "icon": "/Icons/Icons.png",
+  "icon": "Icons/Icons.png",
   "engines": {
     "vscode": "^1.125.0"
   },
