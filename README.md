@@ -19,97 +19,97 @@ Para garantizar la máxima calidad en los diseños, los temas incluyen **múltip
   <tr>
     <td align="center" width="50%">
       <b>jandedobbeleer</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/default.svg" alt="jandedobbeleer" width="100%">
+      <img src="assets/img/default.png" alt="jandedobbeleer" width="100%">
     </td>
     <td align="center" width="50%">
       <b>cyberpunk</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/cyberpunk.svg" alt="cyberpunk" width="100%">
+      <img src="assets/img/cyberpunk.png" alt="cyberpunk" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>dracula</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/dracula.svg" alt="dracula" width="100%">
+      <img src="assets/img/dracula.png" alt="dracula" width="100%">
     </td>
     <td align="center">
       <b>hacker</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/hacker.svg" alt="hacker" width="100%">
+      <img src="assets/img/hacker.png" alt="hacker" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>tokyonight_storm</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/tokyo.svg" alt="tokyonight_storm" width="100%">
+      <img src="assets/img/tokyo.png" alt="tokyonight_storm" width="100%">
     </td>
     <td align="center">
       <b>monokai</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/monokai.svg" alt="monokai" width="100%">
+      <img src="assets/img/monokai.png" alt="monokai" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>blue-owl</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/ocean.svg" alt="blue-owl" width="100%">
+      <img src="assets/img/ocean.png" alt="blue-owl" width="100%">
     </td>
     <td align="center">
       <b>synthwave</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/synthwave.svg" alt="synthwave" width="100%">
+      <img src="assets/img/synthwave.png" alt="synthwave" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>gruvbox</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/gruvbox.svg" alt="gruvbox" width="100%">
+      <img src="assets/img/gruvbox.png" alt="gruvbox" width="100%">
     </td>
     <td align="center">
       <b>minimal</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/minimal.svg" alt="minimal" width="100%">
+      <img src="assets/img/minimal.png" alt="minimal" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>catppuccin_mocha</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/catppuccin.svg" alt="catppuccin_mocha" width="100%">
+      <img src="assets/img/catppuccin.png" alt="catppuccin_mocha" width="100%">
     </td>
     <td align="center">
       <b>cobalt2</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/cobalt2.svg" alt="cobalt2" width="100%">
+      <img src="assets/img/cobalt2.png" alt="cobalt2" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>night-owl</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/night-owl.svg" alt="night-owl" width="100%">
+      <img src="assets/img/night-owl.png" alt="night-owl" width="100%">
     </td>
     <td align="center">
       <b>nord</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/nord.svg" alt="nord" width="100%">
+      <img src="assets/img/nord.png" alt="nord" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>agnoster</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/agnoster.svg" alt="agnoster" width="100%">
+      <img src="assets/img/agnoster.png" alt="agnoster" width="100%">
     </td>
     <td align="center">
       <b>material</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/material.svg" alt="material" width="100%">
+      <img src="assets/img/material.png" alt="material" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center">
       <b>spaceship</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/spaceship.svg" alt="spaceship" width="100%">
+      <img src="assets/img/spaceship.png" alt="spaceship" width="100%">
     </td>
     <td align="center">
       <b>powerlevel10k_rainbow</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/powerlevel10k.svg" alt="powerlevel10k_rainbow" width="100%">
+      <img src="assets/img/powerlevel10k.png" alt="powerlevel10k_rainbow" width="100%">
     </td>
   </tr>
   <tr>
     <td align="center" colspan="2" width="50%">
       <b>paradox</b><br>
-      <img src="https://raw.githubusercontent.com/angeltarcayadev/terminal-setup-style/main/assets/paradox.svg" alt="paradox" width="50%">
+      <img src="assets/img/paradox.png" alt="paradox" width="50%">
     </td>
   </tr>
 </table>
@@ -154,13 +154,10 @@ Esta extensión utiliza la interfaz nativa de configuración de Visual Studio Co
 
 ## 🛠️ Notas de Versión
 
-### v0.1.5
-* **Galería en SVG Puro**: Regreso a la tecnología `.png` nativa para máxima nitidez y calidad visual (sin PNGs intermedios).
-* **Limpieza y Optimización**: Eliminación de dependencias y cachés para un peso de paquete ultra ligero.
-
-### v0.1.4
-* **Galería Restaurada (PNG)**: Conversión de las previas a imágenes nativas `.png` de alta resolución para cumplir con los lineamientos estrictos del Marketplace.
-* **Optimización de Activación**: Ajuste fino en `activationEvents` para un arranque más rápido de la extensión.
+### v0.1.11
+* **Mega Expansión de Temas (19 Diseños)**: Se ha integrado una galería completa con **19 temas dinámicos premium**, incluyendo diseños oficiales (`catppuccin`, `dracula`, `nord`, etc.) y configuraciones personalizadas (`cyberpunk`, `tokyo`, `hacker`).
+* **Galería Visual Optimizada**: Nueva tabla de visualización de dos columnas con capturas reales ultra-nítidas para que elijas tu estilo favorito sin sorpresas.
+* **Separación Inteligente de Assets**: Organización optimizada de los recursos visuales en directorios de imágenes (`img/`) y vectores (`svg/`).
 
 ### v0.1.3
 * **Diseños Premium Dinámicos**: Los temas ahora descargan sus estructuras arquitectónicas desde la nube.

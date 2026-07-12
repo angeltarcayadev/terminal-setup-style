@@ -2,7 +2,7 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "publisher": "angel-t-dev",
   "license": "MIT",
   "repository": {
@@ -16,7 +16,6 @@
   "categories": [
     "Other"
   ],
-
   "main": "./out/extension.js",
   "contributes": {
     "commands": [
