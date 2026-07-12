@@ -184,14 +184,9 @@ Aquí tienes un vistazo de los **27 increíbles temas** que puedes elegir.
   </tr>
 </table>
 
-<!-- 
-## 🤝 Comunidad
+## 📜 Novedades de Desarrollo
 
-Mantente conectado y únete a la conversación con la comunidad:
-
-* [Mastodon](https://mastodon.social/)
-* [Discord](https://discord.com/)
--->
+¿Quieres saber qué hay de nuevo en esta versión o ver el historial de actualizaciones? Revisa nuestro **[Registro de Cambios (Changelog)](CHANGELOG.md)** para enterarte de todas las mejoras, nuevos temas y correcciones.
 
 ---
 <p align="center">
