@@ -1,31 +1,31 @@
 import os
 import subprocess
 import json
+import io
+import urllib.request
+from rich.console import Console
+from rich.text import Text
 
-themes = [
-    {"Name": "angel-default", "Color1": "#FF2A2A", "Color2": "#990000"},
-    {"Name": "angel-cyberpunk", "Color1": "#00FF9C", "Color2": "#008F56"},
-    {"Name": "angel-dracula", "Color1": "#FF79C6", "Color2": "#BD93F9"},
-    {"Name": "angel-hacker", "Color1": "#00FF00", "Color2": "#008000"},
-    {"Name": "angel-tokyo", "Color1": "#7AA2F7", "Color2": "#9ECE6A"},
-    {"Name": "angel-monokai", "Color1": "#FD971F", "Color2": "#F92672"},
-    {"Name": "angel-ocean", "Color1": "#00A8CC", "Color2": "#142850"},
-    {"Name": "angel-synthwave", "Color1": "#FF007F", "Color2": "#3A0CA3"},
-    {"Name": "angel-gruvbox", "Color1": "#FE8019", "Color2": "#D3869B"},
-    {"Name": "angel-minimal", "Color1": "#D4D4D4", "Color2": "#808080"},
-    {"Name": "angel-catppuccin", "Color1": "#CBA6F7", "Color2": "#89B4FA"},
-    {"Name": "angel-cobalt2", "Color1": "#FFC600", "Color2": "#0088FF"},
-    {"Name": "angel-night-owl", "Color1": "#82AAFF", "Color2": "#C792EA"},
-    {"Name": "angel-nord", "Color1": "#88C0D0", "Color2": "#5E81AC"},
-    {"Name": "angel-agnoster", "Color1": "#000000", "Color2": "#005FD7"},
-    {"Name": "angel-material", "Color1": "#00BCD4", "Color2": "#FF9800"},
-    {"Name": "angel-spaceship", "Color1": "#D33682", "Color2": "#268BD2"},
-    {"Name": "angel-powerlevel10k", "Color1": "#FFD700", "Color2": "#005FFF"},
-    {"Name": "angel-paradox", "Color1": "#00FF00", "Color2": "#FF00FF"}
+themes_custom = [
+    {"Name": "default", "Color1": "#FF2A2A", "Color2": "#990000"},
+    {"Name": "cyberpunk", "Color1": "#00FF9C", "Color2": "#008F56"},
+    {"Name": "dracula", "Color1": "#FF79C6", "Color2": "#BD93F9"},
+    {"Name": "hacker", "Color1": "#00FF00", "Color2": "#008000"},
+    {"Name": "tokyo", "Color1": "#7AA2F7", "Color2": "#9ECE6A"},
+    {"Name": "monokai", "Color1": "#FD971F", "Color2": "#F92672"},
+    {"Name": "ocean", "Color1": "#00A8CC", "Color2": "#142850"},
+    {"Name": "synthwave", "Color1": "#FF007F", "Color2": "#3A0CA3"},
+    {"Name": "gruvbox", "Color1": "#FE8019", "Color2": "#D3869B"},
+    {"Name": "minimal", "Color1": "#D4D4D4", "Color2": "#808080"}
+]
+
+themes_official = [
+    "catppuccin_mocha", "cobalt2",
+    "night-owl", "nord", "agnoster", "material",
+    "spaceship", "powerlevel10k_rainbow", "paradox"
 ]
 
 os.makedirs("assets", exist_ok=True)
-freeze_cmd = r"C:\Users\angel\AppData\Local\Microsoft\WinGet\Packages\charmbracelet.freeze_Microsoft.Winget.Source_8wekyb3d8bbwe\freeze_0.2.2_Windows_x86_64\freeze.exe"
 
 base_json = {
   "$schema": "https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/schema.json",
@@ -38,25 +38,32 @@ base_json = {
           "foreground": "#0d1117",
           "leading_diamond": "\u256d\u2500 \ue0b6",
           "style": "diamond",
-          "template": "\uf415 Angel-T ",
-          "trailing_diamond": "\ue0b0",
-          "type": "text"
+          "template": " {{ if .WSL }}WSL at {{ end }}{{.Icon}} ",
+          "type": "os"
         },
         {
           "background": "{C2}",
           "foreground": "#ffffff",
-          "style": "diamond",
-          "template": " \uf07b ~/Proyectos/Terminal-Setup ",
-          "trailing_diamond": "\ue0b0",
-          "type": "text"
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "style": "folder"
+          },
+          "style": "powerline",
+          "template": " \ue5fe {{ .Path }} ",
+          "type": "path"
         },
         {
-          "background": "#21262d",
-          "foreground": "#27c93f",
-          "style": "diamond",
-          "template": " \uf126 main \u21e11 \U0001f4dd +2",
-          "trailing_diamond": " ",
-          "type": "text"
+          "background": "#000000",
+          "foreground": "{C1}",
+          "powerline_symbol": "\ue0b0",
+          "properties": {
+            "branch_icon": "\ue725 ",
+            "fetch_status": True,
+            "fetch_upstream_icon": True
+          },
+          "style": "powerline",
+          "template": " {{ .UpstreamIcon }}{{ .HEAD }}{{if .BranchStatus }} {{ .BranchStatus }}{{ end }}{{ if .Working.Changed }} \uf044 {{ .Working.String }}{{ end }}{{ if and (.Working.Changed) (.Staging.Changed) }} |{{ end }}{{ if .Staging.Changed }} \uf046 {{ .Staging.String }}{{ end }}{{ if gt .StashCount 0 }} \ueb4b {{ .StashCount }}{{ end }} ",
+          "type": "git"
         }
       ],
       "type": "prompt"
@@ -66,45 +73,42 @@ base_json = {
       "newline": True,
       "segments": [
         {
-          "background": "transparent",
           "foreground": "{C1}",
-          "leading_diamond": "\u2570\u2500",
-          "style": "diamond",
-          "trailing_diamond": " ",
+          "style": "plain",
+          "template": "\u2570\u2500",
           "type": "text"
         },
         {
-          "background": "transparent",
-          "foreground": "#27c93f",
-          "style": "diamond",
-          "template": " \ue718 v18.17.0 ",
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": " \uf0e7 ",
           "type": "text"
         },
         {
-          "background": "transparent",
-          "foreground": "#89B4FA",
-          "style": "diamond",
-          "template": " \uf017 14:30 ",
+          "foreground": "#ffffff",
+          "style": "plain",
+          "template": "\u276f ",
           "type": "text"
         },
         {
-          "background": "transparent",
           "foreground": "{C1}",
-          "style": "diamond",
-          "template": " \u276f",
+          "style": "plain",
+          "template": "\u276f ",
           "type": "text"
         }
       ],
       "type": "prompt"
     }
   ],
-  "version": 4
+  "version": 2
 }
 
-import copy
-
-for t in themes:
-    print(f"Generando SVG para {t['Name']}...")
+# 1. Custom themes
+for t in themes_custom:
+    print(f"[*] Generando captura (SVG) para CUSTOM {t['Name']}...")
+    
+    # create json
+    import copy
     theme_json = copy.deepcopy(base_json)
     theme_json["blocks"][0]["segments"][0]["background"] = t["Color1"]
     theme_json["blocks"][0]["segments"][1]["background"] = t["Color2"]
@@ -113,21 +117,52 @@ for t in themes:
     
     with open("temp_theme.json", "w", encoding="utf-8") as f:
         json.dump(theme_json, f, ensure_ascii=False)
-    
+        
     out_file = f"assets/{t['Name']}.svg"
-    cmd = [
-        freeze_cmd,
-        "--execute", "oh-my-posh print primary --config temp_theme.json",
-        "-o", out_file,
-        "--window",
-        "--border.radius", "8",
-        "--padding", "15,20,15,20",
-        "--margin", "20,20,20,20",
-        "--theme", "dracula",
-        "--font.family", "FiraCode Nerd Font"
-    ]
-    subprocess.run(cmd, check=True)
+    
+    try:
+        result = subprocess.run(["oh-my-posh", "print", "primary", "--config", "temp_theme.json"], capture_output=True)
+        if result.returncode != 0:
+            print(f"[!] oh-my-posh falló para {t['Name']}")
+            continue
+            
+        c = Console(file=io.StringIO(), record=True, width=110)
+        c.print(Text.from_ansi(result.stdout.decode('utf-8', errors='ignore')))
+        c.save_svg(out_file, title=f"Theme: {t['Name']}", theme=None)
+    except Exception as e:
+        print(f"[!] Error generando SVG para {t['Name']}: {e}")
+
+# 2. Official themes
+for t in themes_official:
+    print(f"[*] Generando captura (SVG) para OFICIAL {t}...")
+    url = f"https://raw.githubusercontent.com/JanDeDobbeleer/oh-my-posh/main/themes/{t}.omp.json"
+    temp_json = "temp_theme.json"
+    
+    try:
+        urllib.request.urlretrieve(url, temp_json)
+    except Exception as e:
+        print(f"[!] Tema {t} no encontrado en GitHub oficial. Omitiendo... {e}")
+        continue
+
+    out_name = t
+    if t == "catppuccin_mocha": out_name = "catppuccin"
+    if t == "powerlevel10k_rainbow": out_name = "powerlevel10k"
+
+    out_file = f"assets/{out_name}.svg"
+    
+    try:
+        result = subprocess.run(["oh-my-posh", "print", "primary", "--config", temp_json], capture_output=True)
+        if result.returncode != 0:
+            print(f"[!] oh-my-posh falló para {t}")
+            continue
+            
+        c = Console(file=io.StringIO(), record=True, width=110)
+        c.print(Text.from_ansi(result.stdout.decode('utf-8', errors='ignore')))
+        c.save_svg(out_file, title=f"Theme: {out_name}", theme=None)
+    except Exception as e:
+        print(f"[!] Error generando SVG para {t}: {e}")
 
 if os.path.exists("temp_theme.json"):
     os.remove("temp_theme.json")
-print("✅ ¡Todas las capturas SVG generadas!")
+    
+print("[OK] ¡Todas las capturas SVG generadas exitosamente con Rich!")

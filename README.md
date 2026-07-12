@@ -17,61 +17,61 @@ Para garantizar la máxima calidad en los diseños, los temas incluyen **múltip
 
 <div align="center">
   <b>jandedobbeleer</b><br>
-  <img src="./assets/default.png" width="800"><br><br>
+  <img src="./assets/default.svg" width="800"><br><br>
   
   <b>cyberpunk</b><br>
-  <img src="./assets/cyberpunk.png" width="800"><br><br>
+  <img src="./assets/cyberpunk.svg" width="800"><br><br>
 
   <b>dracula</b><br>
-  <img src="./assets/dracula.png" width="800"><br><br>
+  <img src="./assets/dracula.svg" width="800"><br><br>
 
   <b>hacker</b><br>
-  <img src="./assets/hacker.png" width="800"><br><br>
+  <img src="./assets/hacker.svg" width="800"><br><br>
 
   <b>tokyonight_storm</b><br>
-  <img src="./assets/tokyo.png" width="800"><br><br>
+  <img src="./assets/tokyo.svg" width="800"><br><br>
 
   <b>monokai</b><br>
-  <img src="./assets/monokai.png" width="800"><br><br>
+  <img src="./assets/monokai.svg" width="800"><br><br>
 
   <b>blue-owl</b><br>
-  <img src="./assets/ocean.png" width="800"><br><br>
+  <img src="./assets/ocean.svg" width="800"><br><br>
 
   <b>synthwave</b><br>
-  <img src="./assets/synthwave.png" width="800"><br><br>
+  <img src="./assets/synthwave.svg" width="800"><br><br>
 
   <b>gruvbox</b><br>
-  <img src="./assets/gruvbox.png" width="800"><br><br>
+  <img src="./assets/gruvbox.svg" width="800"><br><br>
 
   <b>minimal</b><br>
-  <img src="./assets/minimal.png" width="800"><br><br>
+  <img src="./assets/minimal.svg" width="800"><br><br>
 
   <b>catppuccin_mocha</b><br>
-  <img src="./assets/catppuccin.png" width="800"><br><br>
+  <img src="./assets/catppuccin.svg" width="800"><br><br>
 
   <b>cobalt2</b><br>
-  <img src="./assets/cobalt2.png" width="800"><br><br>
+  <img src="./assets/cobalt2.svg" width="800"><br><br>
 
   <b>night-owl</b><br>
-  <img src="./assets/night-owl.png" width="800"><br><br>
+  <img src="./assets/night-owl.svg" width="800"><br><br>
 
   <b>nord</b><br>
-  <img src="./assets/nord.png" width="800"><br><br>
+  <img src="./assets/nord.svg" width="800"><br><br>
 
   <b>agnoster</b><br>
-  <img src="./assets/agnoster.png" width="800"><br><br>
+  <img src="./assets/agnoster.svg" width="800"><br><br>
 
   <b>material</b><br>
-  <img src="./assets/material.png" width="800"><br><br>
+  <img src="./assets/material.svg" width="800"><br><br>
 
   <b>spaceship</b><br>
-  <img src="./assets/spaceship.png" width="800"><br><br>
+  <img src="./assets/spaceship.svg" width="800"><br><br>
 
   <b>powerlevel10k_rainbow</b><br>
-  <img src="./assets/powerlevel10k.png" width="800"><br><br>
+  <img src="./assets/powerlevel10k.svg" width="800"><br><br>
 
   <b>paradox</b><br>
-  <img src="./assets/paradox.png" width="800"><br><br>
+  <img src="./assets/paradox.svg" width="800"><br><br>
 </div>
 
 ---
