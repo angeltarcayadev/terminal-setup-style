@@ -5,6 +5,11 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
+## [0.1.23] - 2026-07-13
+### Arreglos Críticos
+- **Empaquetado Definitivo de Dependencias**: Se corrigió definitivamente el problema de `"command not found"` garantizando que la librería interna (figlet) se empaquete correctamente usando la última versión del motor `@vscode/vsce`.
+- **Manejo de Errores Robustecido**: Se implementó una capa de protección adicional en la inicialización de la extensión que, en caso de cualquier error, mostrará una ventana emergente descriptiva en lugar de fallar silenciosamente.
+
 ## [0.1.17] - Reciente
 ### Correcciones
 - Solucionado el error `command not found` limpiando la caché de dependencias y re-empaquetando la extensión con soporte total para `figlet`.
