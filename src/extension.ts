@@ -5,23 +5,24 @@ import * as os from 'os';
 import * as https from 'https';
 import * as figlet from 'figlet';
 export function activate(context: vscode.ExtensionContext) {
-    console.log('¡La extensión "Terminal Setup Style" está activa!');
+    try {
+        console.log('¡La extensión "Terminal Setup Style" está activa!');
 
-    // 0. Auto-ejecutar el menú la primera vez o tras una actualización
-    const extensionId = context.extension.id;
-    const currentVersion = context.extension.packageJSON.version;
-    const lastVersion = context.globalState.get(`${extensionId}_version`);
-    
-    if (currentVersion !== lastVersion) {
-        context.globalState.update(`${extensionId}_version`, currentVersion);
-        // Retrasamos un segundo para asegurarnos de que la interfaz de VS Code esté lista
-        setTimeout(() => {
-            vscode.commands.executeCommand('terminal-setup-style.install');
-        }, 1500);
-    }
+        // 0. Auto-ejecutar el menú la primera vez o tras una actualización
+        const extensionId = context.extension.id;
+        const currentVersion = context.extension.packageJSON.version;
+        const lastVersion = context.globalState.get(`${extensionId}_version`);
+        
+        if (currentVersion !== lastVersion) {
+            context.globalState.update(`${extensionId}_version`, currentVersion);
+            // Retrasamos un segundo para asegurarnos de que la interfaz de VS Code esté lista
+            setTimeout(() => {
+                vscode.commands.executeCommand('terminal-setup-style.install');
+            }, 1500);
+        }
 
-    // 1. Registrar el comando de instalación de la terminal
-    let installDisposable = vscode.commands.registerCommand('terminal-setup-style.install', async () => {
+        // 1. Registrar el comando de instalación de la terminal
+        let installDisposable = vscode.commands.registerCommand('terminal-setup-style.install', async () => {
         try {
             const config = vscode.workspace.getConfiguration('terminalSetup');
             const nombre = config.get<string>('nombre') || 'Angel-T Dev';
@@ -121,6 +122,10 @@ export function activate(context: vscode.ExtensionContext) {
 
     context.subscriptions.push(installDisposable);
     context.subscriptions.push(configListener);
+    } catch (e: any) {
+        vscode.window.showErrorMessage(`Error fatal en la extensión: ${e.message}`);
+        console.error("Error fatal en activate:", e);
+    }
 }
 
 export function deactivate() {}

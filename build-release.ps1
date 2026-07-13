@@ -95,7 +95,7 @@ if ($LASTEXITCODE -ne 0) {
 Write-Host "[INFO] Creando el paquete VSIX para la versión $version..." -ForegroundColor Cyan
 $vsixPath = Join-Path $currentDir $newVsixName
 
-npx @vscode/vsce package --out $vsixPath --no-dependencies --allow-star-activation
+npx @vscode/vsce@latest package --out $vsixPath
 
 if ($LASTEXITCODE -eq 0) {
     Write-Host ""
