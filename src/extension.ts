@@ -7,10 +7,13 @@ import * as figlet from 'figlet';
 export function activate(context: vscode.ExtensionContext) {
     console.log('¡La extensión "Terminal Setup Style" está activa!');
 
-    // 0. Auto-ejecutar el menú la primera vez que se instala
-    const isFirstRun = !context.globalState.get('terminalSetupStyle_hasRun');
-    if (isFirstRun) {
-        context.globalState.update('terminalSetupStyle_hasRun', true);
+    // 0. Auto-ejecutar el menú la primera vez o tras una actualización
+    const extensionId = context.extension.id;
+    const currentVersion = context.extension.packageJSON.version;
+    const lastVersion = context.globalState.get(`${extensionId}_version`);
+    
+    if (currentVersion !== lastVersion) {
+        context.globalState.update(`${extensionId}_version`, currentVersion);
         // Retrasamos un segundo para asegurarnos de que la interfaz de VS Code esté lista
         setTimeout(() => {
             vscode.commands.executeCommand('terminal-setup-style.install');

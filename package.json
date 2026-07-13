@@ -2,7 +2,7 @@
   "name": "terminal-setup-style",
   "displayName": "Terminal-Setup-Style",
   "description": "Terminal Setup Style by Angel Eduardo Tarcaya",
-  "version": "0.1.17",
+  "version": "0.1.19",
   "publisher": "angel-t-dev",
   "license": "MIT",
   "repository": {
@@ -15,10 +15,6 @@
   },
   "categories": [
     "Other"
-  ],
-  "activationEvents": [
-    "onCommand:terminal-setup-style.install",
-    "onStartupFinished"
   ],
   "main": "./out/extension.js",
   "contributes": {
