@@ -33,7 +33,7 @@ Lo que comenzó como un pequeño experimento, resultó en una extensión altaman
 2. Ve a la sección de **Extensiones** (Ctrl+Shift+X).
 3. Busca **Terminal Setup Style**.
 4. Haz clic en **Instalar**.
-5. *Nota:* Asegúrate de tener una fuente Nerd Font instalada en tu sistema (ej. *FiraCode Nerd Font*) y configurada en 	erminal.integrated.fontFamily para ver los iconos correctamente.
+5. *Nota:* Asegúrate de tener una fuente Nerd Font instalada en tu sistema (ej. *FiraCode Nerd Font Mono*) y configurada en `terminal.integrated.fontFamily` para ver los iconos correctamente.
 
 ## 🚀 Uso y Configuración
 

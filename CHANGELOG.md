@@ -5,6 +5,10 @@ Todos los cambios notables en este proyecto se documentarán en este archivo.
 El formato se basa en [Keep a Changelog](https://keepachangelog.com/es-ES/1.0.0/),
 y este proyecto se adhiere al [Versionamiento Semántico](https://semver.org/lang/es/).
 
+## [0.1.24] - 2026-07-14
+### Modificado
+- **Unificación de Fuentes**: Se estandarizó el uso de `FiraCode Nerd Font Mono` como la fuente predeterminada y obligatoria en todo el proyecto y los temas para evitar problemas de visualización e íconos.
+
 ## [0.1.23] - 2026-07-13
 ### Arreglos Críticos
 - **Empaquetado Definitivo de Dependencias**: Se corrigió definitivamente el problema de `"command not found"` garantizando que la librería interna (figlet) se empaquete correctamente usando la última versión del motor `@vscode/vsce`.
